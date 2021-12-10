@@ -61,12 +61,11 @@ Ruby, Rails and Postgresql
 
 
 
-##
-Time Estimate
+## Time Estimate
 <a href="https://imgur.com/bDYuqdo"><img src="https://i.imgur.com/bDYuqdo.png" title="source: imgur.com" /></a>
 
 ## Post MVP
-- Integrate Discogs API
+- Integrate Discogs API - Have user be able to search, add, post albums
 - Work adding multiple table and user input
 
 
