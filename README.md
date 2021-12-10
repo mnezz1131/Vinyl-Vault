@@ -27,7 +27,7 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 
 ## Wireframe
 <a href="https://imgur.com/PpdnkpL"><img src="https://i.imgur.com/PpdnkpL.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/0FMx9vS"><img src="https://i.imgur.com/0FMx9vS.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/fze767k"><img src="https://i.imgur.com/fze767k.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/N1z9r8k"><img src="https://i.imgur.com/N1z9r8k.png" title="source: imgur.com" /></a>
 
 
@@ -38,7 +38,7 @@ Figma Project Page:https://www.figma.com/file/UHYXCqAzBljsLorrXlXylx/Vinyl-Vault
 <a href="https://imgur.com/9gDgLam"><img src="https://i.imgur.com/9gDgLam.png" title="source: imgur.com" /></a>
 
 ## Component Architecture
-<a href="https://imgur.com/ggIUhaj"><img src="https://i.imgur.com/ggIUhaj.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/1CQIZYc"><img src="https://i.imgur.com/1CQIZYc.png" title="source: imgur.com" /></a>
 
 ## Libaries and Dependencies
 - React
