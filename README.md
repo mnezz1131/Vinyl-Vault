@@ -65,6 +65,7 @@ Ruby, Rails and Postgresql
 <a href="https://imgur.com/bDYuqdo"><img src="https://i.imgur.com/bDYuqdo.png" title="source: imgur.com" /></a>
 
 ## Post MVP
+- Sortable drop down list for albums by artist, genre, alphabetical
 - Integrate Discogs API - Have user be able to search, add, post albums
 - Work adding multiple table and user input
 
