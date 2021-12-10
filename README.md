@@ -28,7 +28,7 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 ## Wireframe
 <a href="https://imgur.com/eTQeaKs"><img src="https://i.imgur.com/eTQeaKs.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/v56MOkB"><img src="https://i.imgur.com/v56MOkB.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/N1z9r8k"><img src="https://i.imgur.com/N1z9r8k.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/fze767k"><img src="https://i.imgur.com/fze767k.png" title="source: imgur.com" /></a>
 
 
 To view complete project wireframes please visit,
