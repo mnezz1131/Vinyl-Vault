@@ -27,8 +27,7 @@ Client (Front End)
 - Album Detail (Edit Info - Delete)
 - Album Entry Create
 
-##
-Wireframe
+##Wireframe
 <a href="https://imgur.com/PpdnkpL"><img src="https://i.imgur.com/PpdnkpL.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/0FMx9vS"><img src="https://i.imgur.com/0FMx9vS.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/N1z9r8k"><img src="https://i.imgur.com/N1z9r8k.png" title="source: imgur.com" /></a>
