@@ -14,10 +14,11 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 - Authorization and Authentication and associated logic
 - New State and component structure logic
 
-## MVP
+##
+MVP
 
-### Client (Front End)
-
+##
+Client (Front End)
 - Home Page (Not Signed In)
 - Home Page (Signed In)
 - Sign In
@@ -26,7 +27,8 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 - Album Detail (Edit Info - Delete)
 - Album Entry Create
 
-## Wireframe
+##
+Wireframe
 <a href="https://imgur.com/PpdnkpL"><img src="https://i.imgur.com/PpdnkpL.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/0FMx9vS"><img src="https://i.imgur.com/0FMx9vS.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/N1z9r8k"><img src="https://i.imgur.com/N1z9r8k.png" title="source: imgur.com" /></a>
@@ -35,7 +37,8 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 To view complete project wireframes please visit,
 Figma Project Page:https://www.figma.com/file/UHYXCqAzBljsLorrXlXylx/Vinyl-Vault?node-id=0%3A1
 
-##Component Tree
+##
+Component Tree
 <a href="https://imgur.com/9gDgLam"><img src="https://i.imgur.com/9gDgLam.png" title="source: imgur.com" /></a>
 
 ##
