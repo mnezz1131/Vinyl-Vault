@@ -4,21 +4,19 @@
 
 Vinyl Vault is an application created for the avid vinyl enthusiast to catalog their precious record collection. Use the app to peruse your vinyl collection, add albums to your collection as you acquire them, edit your previous purchases and delete the albums you no longer own. The goal is to streamline access to maintaining your record collection information so you can spend more time listening and enjoying the collection.
 
-#Features
+## Features
 Vinyl Vault is a full CRUD (Create, Read, Update, Destroy) application allowing a seamless user experience when maintaining a user's record collection.  It also features secure authorization and authentication for a safe user exeperience.
 
-##Goals
+## Goals
 To deliver an operable app by the deadline that is fully functioning and stylistically complete.
 
-##Challenges
+## Challenges
 - Authorization and Authentication and associated logic
 - New State and component structure logic
 
-##
-MVP
+## MVP
 
-##
-Client (Front End)
+## Client (Front End)
 - Home Page (Not Signed In)
 - Home Page (Signed In)
 - Sign In
