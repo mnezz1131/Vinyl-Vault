@@ -25,7 +25,7 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 - Album Detail (Edit Info - Delete)
 - Album Entry Create
 
-##Wireframe
+## Wireframe
 <a href="https://imgur.com/PpdnkpL"><img src="https://i.imgur.com/PpdnkpL.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/0FMx9vS"><img src="https://i.imgur.com/0FMx9vS.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/N1z9r8k"><img src="https://i.imgur.com/N1z9r8k.png" title="source: imgur.com" /></a>
@@ -34,16 +34,13 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 To view complete project wireframes please visit,
 Figma Project Page:https://www.figma.com/file/UHYXCqAzBljsLorrXlXylx/Vinyl-Vault?node-id=0%3A1
 
-##
-Component Tree
+## Component Tree
 <a href="https://imgur.com/9gDgLam"><img src="https://i.imgur.com/9gDgLam.png" title="source: imgur.com" /></a>
 
-##
-Component Architecture
+## Component Architecture
 <a href="https://imgur.com/ggIUhaj"><img src="https://i.imgur.com/ggIUhaj.png" title="source: imgur.com" /></a>
 
-##
-Libaries and Dependencies
+## Libaries and Dependencies
 - React
 - React Router
 - Ruby
@@ -51,20 +48,16 @@ Libaries and Dependencies
 - Postagresql
 - React Semantic UI
 
-##
-Server (Backend)
+## Server (Backend)
 Ruby, Rails and Postgresql
 
-##
-Data Architecture
+## Data Architecture
 <a href="https://imgur.com/JLIs5xy"><img src="https://i.imgur.com/JLIs5xy.png" title="source: imgur.com" /></a>
 
-##
-ERD Model
+## ERD Model
 <a href="https://imgur.com/U3YFGcQ"><img src="https://i.imgur.com/U3YFGcQ.png" title="source: imgur.com" /></a>
 
-##
-API Endpoint Documentation
+## API Endpoint Documentation
 
 
 
@@ -72,8 +65,7 @@ API Endpoint Documentation
 Time Estimate
 <a href="https://imgur.com/bDYuqdo"><img src="https://i.imgur.com/bDYuqdo.png" title="source: imgur.com" /></a>
 
-##
-Post MVP
+## Post MVP
 - Integrate Discogs API
 - Work adding multiple table and user input
 
