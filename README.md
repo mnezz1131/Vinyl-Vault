@@ -42,7 +42,8 @@ Figma Project Page:https://www.figma.com/file/UHYXCqAzBljsLorrXlXylx/Vinyl-Vault
 Component Architecture
 <a href="https://imgur.com/ggIUhaj"><img src="https://i.imgur.com/ggIUhaj.png" title="source: imgur.com" /></a>
 
-##Libaries and Dependencies
+##
+Libaries and Dependencies
 - React
 - React Router
 - Ruby
@@ -50,22 +51,28 @@ Component Architecture
 - Postagresql
 - React Semantic UI
 
-##Server (Backend)
+##
+Server (Backend)
 Ruby, Rails and Postgresql
 
-##Data Architecture
+##
+Data Architecture
 <a href="https://imgur.com/JLIs5xy"><img src="https://i.imgur.com/JLIs5xy.png" title="source: imgur.com" /></a>
 
-##ERD Model
+##
+ERD Model
 <a href="https://imgur.com/U3YFGcQ"><img src="https://i.imgur.com/U3YFGcQ.png" title="source: imgur.com" /></a>
 
-##API Endpoint Documentation
+##
+API Endpoint Documentation
 
 
 
-##Time Estimate
+##
+Time Estimate
 <a href="https://imgur.com/bDYuqdo"><img src="https://i.imgur.com/bDYuqdo.png" title="source: imgur.com" /></a>
 
+##
 Post MVP
 - Integrate Discogs API
 - Work adding multiple table and user input
