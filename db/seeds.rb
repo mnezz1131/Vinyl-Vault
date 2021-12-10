@@ -21,8 +21,8 @@ Album.create!(
   released:1959,
   thumb_url:"https://img.discogs.com/pF1pbojlTKzM3xIdmJWM83btyTY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2825456-1430770143-1057.jpeg.jpg",
   cover_url:"https://img.discogs.com/HHYEYoXSKrwMxOp_lSmq9oNmML8=/fit-in/600x608/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2825456-1430770143-1057.jpeg.jpg",
-  user: @admin
-  )
+  user_id: @admin[:id]
+)
 Album.create!(
   title:"Midnight Blue",
   artist:"Kenny Burrell",
@@ -33,7 +33,10 @@ Album.create!(
   purchased:2020,
   released:1963,
   thumb_url:"https://img.discogs.com/iQ7HwT9GK5WohrMf0XR1G_H-97c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5953455-1590237726-6201.jpeg.jpg",
-  cover_url:"https://img.discogs.com/jEdaOaYIg_lOqsPmGMjt-Kblz64=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5953455-1590237726-6201.jpeg.jpg")
+  cover_url:"https://img.discogs.com/jEdaOaYIg_lOqsPmGMjt-Kblz64=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5953455-1590237726-6201.jpeg.jpg",
+  user_id: @admin[:id]
+)
+
 Album.create!(
   title:"Idle Moments",
   artist:"Grant Green",
@@ -45,8 +48,8 @@ Album.create!(
   released:1964,
   thumb_url:"https://img.discogs.com/oqZaGtNhJdmuA0W4ppDOICORh0U=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3163215-1351719174-4016.jpeg.jpg",
   cover_url:"https://img.discogs.com/gZEImCpuECxmbFiR3bZxyNTRknQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3163215-1351719174-4016.jpeg.jpg",
-  user: @admin
-  )
+  user_id: @admin[:id]
+)
 Album.create!(
   title:"Mingus Ah Um",
   artist:"Charles Mingus",
@@ -58,10 +61,10 @@ Album.create!(
   released:1959,
   thumb_url:"https://img.discogs.com/2De2bS6kD3-aZ8Nld1pYGDjvqbU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1355742-1434340189-3474.jpeg.jpg",
   cover_url:"https://img.discogs.com/HqgB8WUAgF0H6VOVUN958JFnGaY=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1355742-1434340189-3474.jpeg.jpg",
-  user: @admin
-  )
+  user_id: @admin[:id]
+)
 
 puts "#{User.count} users created"
-puts "#{Album.count} users created"
+puts "#{Album.count} albums created"
 
 
