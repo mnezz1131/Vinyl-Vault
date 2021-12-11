@@ -73,7 +73,7 @@ nav {
 .nav-link-sign-in:hover,
 .nav-link-models:hover {
   color: #3aa9f4;
-  border-bottom: solid #3aa9f4 4px;
+  border-bottom: solid #da9b1d 4px;
   transition: all ease-in-out 200ms;
 }
 

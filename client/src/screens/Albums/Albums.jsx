@@ -1,10 +1,10 @@
 // import { useState, useEffect } from "react";
-import "./AlbumCreate.css";
+import "./Albums.css";
 import Layout from "../../components/Layout/Layout.jsx";
 
-import { postAlbum } from "../../services/albums.js";
+import { getAlbums } from "../../services/albums.js";
 
-const AlbumCreate = (props) => {
+const Albums = (props) => {
   
   return (
     <Layout>
@@ -14,4 +14,4 @@ const AlbumCreate = (props) => {
     </Layout>
   );
 };
-export default AlbumCreate;
+export default Albums;
