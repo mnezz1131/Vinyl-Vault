@@ -6,9 +6,9 @@ import Layout from "../../components/Layout/Layout.jsx";
 const Home = (props) => {
   return (
     <Layout user={props.user}>
-      
-      <div className="home-content">
-        <h1>Welcome to Vinyl Vault</h1>
+
+      <div className="home-logo rotate linear infinite">
+      <img src ="../../images/logo-big.png" alt="logo"/>
       </div>
     </Layout>
   );

@@ -1,7 +1,24 @@
 
+.rotate {
+  animation: rotation 10s;
+} 
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-h1{
-  font-size: 65px;
-  text-align: center;
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+.rotate-image {
+  animation: rotation 2s linear infinite;
 }
