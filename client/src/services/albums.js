@@ -10,13 +10,13 @@ export const getOneAlbum = async (id) => {
   return resp.data;
 };
 
-export const postAlbum = async (albumData) => {
+export const createAlbum = async (albumData) => {
   const resp = await api.post('/albums', { album: albumData });
   return resp.data;
 };
 
 export const putAlbum = async (id, albumData) => {
-  const resp = await api.put(`/albums/${id}`, { food: albumData });
+  const resp = await api.put(`/albums/${id}`, { album: albumData });
   return resp.data;
 };
 

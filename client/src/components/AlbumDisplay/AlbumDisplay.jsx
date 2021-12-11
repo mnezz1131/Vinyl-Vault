@@ -1,7 +1,8 @@
-import './Album.css';
 import { Link } from 'react-router-dom'
+import './AlbumDisplay.jsx'
 
-const Album = (props) => {
+
+const AlbumDisplay = (props) => {
     return (
         <>
             <Link className="album" to={`/album/${props._id}`}>
@@ -12,4 +13,4 @@ const Album = (props) => {
         </>
     )
 }
-export default Album;
+export default AlbumDisplay

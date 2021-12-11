@@ -26,8 +26,8 @@ const unauthenticadedOptions = (
 const alwaysOptions = (
   <>
     <Link className="nav-link-models" to="/albums">Albums</Link>
-    <Link className="nav-link-models" to="/albums">Save An Album</Link>
-    <Link className="nav-link-models" to="/albums">Edit An Album</Link>
+    <Link className="nav-link-models" to="/add-album">Save An Album</Link>
+    <Link className="nav-link-models" to="/albums/:id/edit">Edit An Album</Link>
    
   </>
 )

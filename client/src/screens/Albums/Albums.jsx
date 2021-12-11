@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Albums.css";
 import Layout from "../../components/Layout/Layout.jsx";
-
+import AlbumDisplay from '../../components/AlbumDisplay/AlbumDisplay.jsx'
 import { getAllAlbums } from "../../services/albums.js";
 
 const Albums = (props) => {
@@ -9,7 +9,7 @@ const Albums = (props) => {
 
   useEffect(() => {
     const fetchAlbums = async () => {
-      const allAlbums = await getAlbums()
+      const allAlbums = await getAllAlbums()
       setAlbums(allAlbums)
     }
     fetchAlbums()
@@ -20,7 +20,7 @@ const Albums = (props) => {
       <div className='albums'>
         {albums.map((album, index) => {
           return (
-            <Album
+            <AlbumDisplay
               _id={album._id}
               title={album.title}
               artist={album.artist}
@@ -36,8 +36,7 @@ const Albums = (props) => {
             />
           )
         })}
-      </div>
-          
+      </div> 
     </Layout>
   );
 };
