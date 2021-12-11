@@ -1,6 +1,6 @@
 class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :update, :destroy]
-  # before_action :authorize_request, except: [:index, :show]
+  before_action :authorize_request, except: [:index, :show]
   
   # GET /albums
   def index
@@ -17,9 +17,10 @@ class AlbumsController < ApplicationController
   # POST /albums
   def create
     @album = Album.new(album_params)
+    @album.user = @current_user
 
     if @album.save
-      render json: @album, status: :created, location: @album
+      render json: @album, status: :created
     else
       render json: @album.errors, status: :unprocessable_entity
     end
@@ -47,6 +48,6 @@ class AlbumsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def album_params
-      params.require(:album).permit(:title, :artist, :genre, :img_url, :vendor, :condition, :cost, :purchased, :released, :user_id_id)
+      params.require(:album).permit(:title, :artist, :genre, :cover_url, :vendor, :condition, :cost, :purchased, :released, :user_id)
     end
 end
