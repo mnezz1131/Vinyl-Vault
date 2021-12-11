@@ -25,13 +25,10 @@ const unauthenticadedOptions = (
 )
 const alwaysOptions = (
   <>
-    <NavLink className="nav-link-models" to="/cars">MODELS</NavLink>
-    <NavLink className="nav-link-models-icon" to="/cars">
-      <img
-        src="/images/icons/view-list.svg"
-        alt="shopping bag"
-      />
-    </NavLink>
+    <NavLink className="nav-link-models" to="/cars">Albums</NavLink>
+    <NavLink className="nav-link-models" to="/cars">Save An Album</NavLink>
+    <NavLink className="nav-link-models" to="/cars">Edit An Album</NavLink>
+   
   </>
 )
 
@@ -40,7 +37,9 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav-left">
         <NavLink to="/">
-          <img className="nav-logo" src={'/images/logo.png'} alt="Logo" />
+        
+          <img className="nav-logo" src={'/images/logo-big.png'} alt="Title" />
+          <img className="nav-title" src={'/images/title.png'} alt="Title" />
         </NavLink>
         <div className="nav-btns">
           {alwaysOptions}

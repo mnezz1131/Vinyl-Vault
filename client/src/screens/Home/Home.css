@@ -1,4 +1,4 @@
-
+/* Spinning record logo */
 .rotate {
   animation: rotation 10s;
 } 
@@ -21,4 +21,11 @@
 }
 .rotate-image {
   animation: rotation 2s linear infinite;
+}
+
+.home-logo{
+  display: flex;
+
+  margin: 0 auto;
+
 }
