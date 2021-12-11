@@ -5,13 +5,12 @@ class AlbumsController < ApplicationController
   # GET /albums
   def index
     @albums = Album.all
-
     render json: @albums
   end
 
   # GET /albums/1
   def show
-    render json: @album
+    render json: @album, include: :notes
   end
 
   # POST /albums
