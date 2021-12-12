@@ -38,10 +38,10 @@ function App() {
           <SignIn setUser={setUser} />
         </Route>
 
-        <Route path="/sign-out"><SignOut/></Route>
+        <Route path="/sign-out"><SignOut setUser={setUser}/></Route>
         
         <Route exact path="/albums"><Albums user={user} /></Route>
-        <Route exact path="/add-albums"><AlbumCreate user={user} /></Route>
+        <Route exact path="/add-album"><AlbumCreate user={user} /></Route>
         <Route exact path="/edit-albums"><AlbumEdit user={user} /></Route>
 
         {/* <Route path="/add-album">

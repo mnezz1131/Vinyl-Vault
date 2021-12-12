@@ -2,7 +2,7 @@
 import "./AlbumEdit.css";
 import Layout from "../../components/Layout/Layout.jsx";
 
-import { getOneAlbum } from "../../services/albums.js";
+// import { getOneAlbum } from "../../services/albums.js";
 
 const AlbumEdit = (props) => {
   

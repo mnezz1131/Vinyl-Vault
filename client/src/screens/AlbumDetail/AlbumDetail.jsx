@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import "./AlbumDetail.css";
+import { useState, useEffect } from "react";
 import  Layout  from "../../components/Layout/Layout.jsx";
 import { getOneAlbum, deleteAlbum } from "../../services/albums";
 import { useParams, Link } from "react-router-dom";
@@ -10,13 +10,13 @@ const AlbumDetail = (props) => {
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchProduct = async () => {
+    const fetchAlbum = async () => {
       const album = await getOneAlbum(id);
       console.log(album)
       setAlbum(album);
       setLoaded(true);
     };
-    fetchProduct();
+    fetchAlbum();
   }, [id]);
 
   if (!isLoaded) {

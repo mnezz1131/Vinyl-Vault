@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
-  before_action :authorize_request, except: :create
+  before_action :authorize_request, except: :
+
+
+    # GET /users
+    def index
+      @user = Album.all
+      render json: @users
+    end
+
 
 #Post/users
   def create
