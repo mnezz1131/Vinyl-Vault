@@ -32,13 +32,8 @@ const AlbumDetail = (props) => {
         />
         <div className="detail">
           <div className="title">{album.title}</div>
-          <div className="price">{`$${album.artist}`}</div>
-          <div className="description">{album.genre}</div>
-          <div className="description">{album.vendor}</div>
-          <div className="description">{album.condition}</div>
-          <div className="description">{album.cost}</div>
-          <div className="description">{album.purchased}</div>
-          <div className="description">{album.released}</div>
+          <div className="artist">{`${album.artist}`}</div>
+         
           <div className="button-container">
             <Link className="edit-button" to={`/albums/${album._id}/edit`}>
               Edit

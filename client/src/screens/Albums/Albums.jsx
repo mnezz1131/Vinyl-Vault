@@ -16,7 +16,7 @@ const Albums = (props) => {
   }, [])
   return (
     <Layout>
-      <h1>This  is albums</h1>
+   
       <div className='albums'>
         {albums.map((album, index) => {
           return (
@@ -30,8 +30,7 @@ const Albums = (props) => {
               cost={album.cost}
               purchased={album.purchased}
               released={album.released}
-              thumb_url={album.thumb_url}
-              cover_ucl={album.cover_url}
+              cover_url={album.cover_url}
               key={index}
             />
           )
