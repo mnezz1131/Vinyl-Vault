@@ -12,6 +12,7 @@ const AlbumDetail = (props) => {
   useEffect(() => {
     const fetchProduct = async () => {
       const album = await getOneAlbum(id);
+      console.log(album)
       setAlbum(album);
       setLoaded(true);
     };
@@ -32,7 +33,14 @@ const AlbumDetail = (props) => {
         />
         <div className="detail">
           <div className="title">{album.title}</div>
-          <div className="artist">{`${album.artist}`}</div>
+          <div className="artist">{album.artist}</div>
+          <div className="genre">{album.genre}</div>
+          <div className="vendor">{album.vendor}</div>
+          <div className="condition">{album.condition}</div>
+          <div className="cost">{album.cost}</div>
+          <div className="purchased">{album.purchased}</div>
+          <div className="released">{album.released}</div>
+    
          
           <div className="button-container">
             <Link className="edit-button" to={`/albums/${album._id}/edit`}>

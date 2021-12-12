@@ -25,6 +25,7 @@ const alwaysOptions = (
 )
 
 const Nav = ({ user }) => {
+  console.log(user)
   return (
     <nav>
       <div className="nav-left">
@@ -39,7 +40,7 @@ const Nav = ({ user }) => {
         </div>
       </div>
       <div className="nav-right">
-        {user && <div className="nav-welcome">Welcome, &nbsp; {user.name}</div>}
+        {user && <div className="nav-welcome">Welcome, &nbsp; {user.username}</div>}
 
         
       </div>
