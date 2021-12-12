@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./AlbumCreate.css";
 import Layout from "../../components/Layout/Layout.jsx";
-
+import Button1  from "../../components/Button/Button";
 import { createAlbum } from "../../services/albums.js";
 
 const AlbumCreate = (props) => {
@@ -23,6 +23,7 @@ const AlbumCreate = (props) => {
         <div>
           <form className="create-form">
             <input
+              label="Title"
               className="input-Title"
               placeholder="Title"
               value={album.title}
@@ -104,9 +105,9 @@ const AlbumCreate = (props) => {
               // onChange={handleChange}
             />
 
-            <button type="submit" className="submit-button">
+            <Button1 type="submit" className="submit-button">
               Submit
-            </button>
+            </Button1>
           </form>
         </div>
       </div>

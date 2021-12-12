@@ -1,61 +1,108 @@
-import { useState } from 'react';
+import './SignUp.css'
+import { useState } from 'react'
+import { registerUser} from '../../services/auth'
+import { useHistory } from 'react-router-dom'
+import Layout  from '../../components/Layout/Layout.jsx'
 
-export default function Register(props) {
-  const [formData, setFormData] = useState({
+const SignUp = (props) => {
+  const history = useHistory()
+
+  const [form, setForm] = useState({
     username: '',
     email: '',
     password: '',
-  });
-  const { username, email, password } = formData;
-  const { handleRegister } = props;
+    passwordConfirmation: '',
+    isError: false,
+    errorMsg: '',
+  })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+  const handleChange = (event) =>
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    })
+
+  const onSignUp = async (event) => {
+    event.preventDefault()
+    const { setUser } = props
+    try {
+      const user = await registerUser(form)
+      setUser(user)
+      history.push('/')
+    } catch (error) {
+      console.error(error)
+      setForm({
+        username: '',
+        email: '',
+        password: '',
+        passwordConfirmation: '',
+        isError: true,
+        errorMsg: 'Sign Up Details Invalid',
+      })
+    }
+  }
+
+  const renderError = () => {
+    const toggleForm = form.isError ? 'danger' : ''
+    if (form.isError) {
+      return (
+        <button type='submit' className={toggleForm}>
+          {form.errorMsg}
+        </button>
+      )
+    } else {
+      return <button type='submit'>Sign Up</button>
+    }
+  }
+
+  const { username, email, password, passwordConfirmation } = form
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleRegister(formData);
-      }}
-    >
-      <h3>Register</h3>
-      <label>
-        Username:
+    <Layout>
+    <div className='form-container'>
+      <h3>Sign Up</h3>
+      <form onSubmit={onSignUp}>
+        <label>Username</label>
         <input
+          required
           type='text'
           name='username'
           value={username}
+          placeholder='Enter username'
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        Email:
+        <label>Email address</label>
         <input
-          type='text'
+          required
+          type='email'
           name='email'
           value={email}
+          placeholder='Enter email'
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        Password:
+        <label>Password</label>
         <input
-          type='password'
+          required
           name='password'
           value={password}
+          type='password'
+          placeholder='Password'
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <button>Submit</button>
-    </form>
-  );
+        <label>Password Confirmation</label>
+        <input
+          required
+          name='passwordConfirmation'
+          value={passwordConfirmation}
+          type='password'
+          placeholder='Confirm Password'
+          onChange={handleChange}
+        />
+        {renderError()}
+      </form>
+      </div>
+      </Layout>
+  )
 }
+
+export default SignUp

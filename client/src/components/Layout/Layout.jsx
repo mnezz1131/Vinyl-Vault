@@ -1,5 +1,5 @@
 import './Layout.css'
-import { Link } from 'react-router-dom'
+
 import Nav from '../Nav/Nav.jsx'
 // import Footer from '../Footer/Footer.jsx'
 

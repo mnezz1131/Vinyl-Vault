@@ -1,52 +1,88 @@
 
-  
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react'
+import './SignIn.css'
+import { loginUser } from '../../services/auth'
+import { useHistory } from 'react-router-dom'
+import Layout from "../../components/Layout/Layout.jsx";
 
-export default function Login(props) {
-  const [formData, setFormData] = useState({
-    username: '',
+const SignIn = (props) => {
+  const history = useHistory()
+
+  const [form, setForm] = useState({
+    email: '',
     password: '',
-  });
-  const { username, password } = formData;
-  const { handleLogin } = props;
+    isError: false,
+    errorMsg: '',
+  })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+  const handleChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    })
+  }
+
+  const onSignIn = async (event) => {
+    event.preventDefault()
+    const { setUser } = props
+    try {
+      const user = await loginUser(form)
+      setUser(user)
+      history.push('/')
+    } catch (error) {
+      console.error(error)
+      setForm({
+        isError: true,
+        errorMsg: 'Invalid Credentials',
+        email: '',
+        password: '',
+      })
+    }
+  }
+
+  const renderError = () => {
+    const toggleForm = form.isError ? 'danger' : ''
+    if (form.isError) {
+      return (
+        <button type='submit' className={toggleForm}>
+          {form.errorMsg}
+        </button>
+      )
+    } else {
+      return <button type='submit'>Sign In</button>
+    }
+  }
+
+  const { email, password } = form
 
   return (
-    <form onSubmit={(e)=> {
-      e.preventDefault();
-      handleLogin(formData);
-    }}>
-      <h3>Login</h3>
-      <label>
-        Username:
+    <Layout>
+    <div className='form-container'>
+      <h3>Sign In</h3>
+      <form onSubmit={onSignIn}>
+        <label>Email</label>
         <input
+          required
           type='text'
-          name='username'
-          value={username}
+          name='email'
+          value={email}
+          placeholder='Enter Email'
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        Password:
+        <label>Password</label>
         <input
-          type='password'
+          required
           name='password'
           value={password}
+          type='password'
+          placeholder='Password'
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <Link to='/register'>Register</Link>
-      <button>Submit</button>
-    </form>
-  );
+        {renderError()}
+      </form>
+      </div>
+      </Layout>
+  )
 }
+
+export default SignIn

@@ -3,32 +3,24 @@ import { Link } from 'react-router-dom'
 
 const authenticatedOptions = (
   <>
-    <Link className="nav-link-account" to="/user">ACCOUNT INFO</Link>
-    <Link className="nav-link-account-icon" to="/user">
-      <img
-        src="/images/icons/person-fill.svg"
-        alt="shopping bag"
-      />
-    </Link>
+    <Link className="nav-link-models" to="/albums">Albums</Link>
+    <Link className="nav-link-models" to="/add-album">Save An Album</Link>
+    <Link className="nav-link-models" to="/albums/:id/edit">Edit An Album</Link>
+    <Link className="nav-link-sign-out" to="/sign-out">Sign Out</Link>
   </>
 )
 const unauthenticadedOptions = (
   <>
-    <Link className="nav-link-sign-in" to="/signIn">SIGN IN</Link>
-    <Link className="nav-link-sign-in-icon" to="/signIn">
-      <img
-        src="/images/icons/door-open-fill.svg"
-        alt="shopping bag"
-      />
-    </Link>
+    <Link className="nav-link-sign-up" to="/sign-up">Sign Up</Link>
+    <Link className="nav-link-sign-in" to="/sign-in">Sign In</Link>
   </>
 )
 const alwaysOptions = (
   <>
-    <Link className="nav-link-models" to="/albums">Albums</Link>
+    {/* <Link className="nav-link-models" to="/albums">Albums</Link>
     <Link className="nav-link-models" to="/add-album">Save An Album</Link>
     <Link className="nav-link-models" to="/albums/:id/edit">Edit An Album</Link>
-   
+    */}
   </>
 )
 
@@ -49,12 +41,7 @@ const Nav = ({ user }) => {
       <div className="nav-right">
         {user && <div className="nav-welcome">Welcome, &nbsp; {user.name}</div>}
 
-        {user && <Link className="nav-shopping-bag" to="/cart">
-          <img
-            src="/images/icons/bag-fill.svg"
-            alt="shopping bag"
-          />
-        </Link>}
+        
       </div>
     </nav>
   )
