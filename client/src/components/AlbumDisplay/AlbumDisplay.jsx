@@ -4,8 +4,8 @@ import "./AlbumDisplay.jsx";
 const AlbumDisplay = ({album}) => {
   return (
     <>
-      <Link className="album" to={`/albums/${album.id}`}>
-        <div>
+      <Link className="album-display" to={`/albums/${album.id}`}>
+        <div classname ="album-details">
           <img className="cover_url" src={album.cover_url} alt={album.title} />
           <div className="album-artist">{album.artist}</div>
           <div className="album-title">{`${album.title}`}</div>

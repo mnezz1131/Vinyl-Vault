@@ -1,7 +1,7 @@
 import './Layout.css'
 
 import Nav from '../Nav/Nav.jsx'
-// import Footer from '../Footer/Footer.jsx'
+import Footer from '../Footer/Footer.jsx'
 
 const Layout = ({user, handleLogout, children}) => (
   <div className='layout'>
@@ -11,7 +11,7 @@ const Layout = ({user, handleLogout, children}) => (
       <div className="layout-children">
           {children}
       </div>
-      {/* <Footer /> */}
+      <Footer />
   </div>
 )
 

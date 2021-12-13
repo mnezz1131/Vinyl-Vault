@@ -28,6 +28,7 @@ nav {
 
 /* Vinyl Vault logo*/
 .nav-logo {
+  
   padding: auto;
   height: auto;
   width: 90px;
@@ -53,7 +54,7 @@ nav {
 }
 
 .nav-link-models-button{
-background-color: rgb(223, 46, 46);
+background-color: rgb(211, 119, 6);
 padding:0.35em 1.2em;;
 color:black;
 font-weight: 700;
