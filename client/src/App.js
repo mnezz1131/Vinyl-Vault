@@ -96,7 +96,7 @@ function App() {
           <AlbumCreate user={user} handleLogout={handleLogout} handleAlbumCreate={handleAlbumCreate}/>
         </Route>
         <Route path="/albums/:id/edit">
-          <AlbumEdit user={user} handleAlbumUpdate={handleAlbumUpdate} handleLogout={handleLogout} handleAlbumDelete={handleAlbumDelete } />
+          <AlbumEdit user={user} albums={albums}handleAlbumUpdate={handleAlbumUpdate} handleLogout={handleLogout} handleAlbumDelete={handleAlbumDelete } />
         </Route>
 
         <Route path="/albums/:id">

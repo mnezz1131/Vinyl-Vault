@@ -1,11 +1,10 @@
 import "./AlbumEdit.css";
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
-import Button1 from "../../components/Button/Button";
 import { useParams } from "react-router-dom";
 import { getOneAlbum } from "../../services/albums";
 
-const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete }) => {
+const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbumDelete }) => {
   const [album, setAlbum] = useState({
     title: "",
     artist: "",
@@ -54,17 +53,25 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-      <div>
-      
+  
+  
+      <div className="album-edit-container">
+        <div className='image-container'>
+          <img
+            className='edit-product-image'
+            src={album.cover_url}
+            alt={album.title}
+          />
         </div>
-        <div className="album-edit-container">
+      <div className="album-edit-form">
           <form className="create-form" onSubmit={(e) => {
             e.preventDefault()
             handleAlbumUpdate(id, album)
-        }}>
-          <label className="album-edit-label" for="Title">Title</label>
+          }}>
+          <h1>Edit An Album</h1>
+          <label className="album-edit-label" htmlFor="Title">Title</label>
             <input
-              className="input-Title"
+              className="album-input"
               placeholder="Title"
               value={album.title}
               name="title"
@@ -72,72 +79,78 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               autoFocus
               onChange={handleChange}
           />
-          <label className="album-edit-label"  for="Title">Artist</label>
+            <label className="album-edit-label"
+              htmlFor="Title">Artist</label>
             <input
-              className="input-artist"
+              className="album-input"
               placeholder="Artist"
               value={album.artist}
               name="artist"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label"   for="Title">Genre</label>
+            <label className="album-edit-label"
+              htmlFor="Title">Genre</label>
             <input
-              className="input-genre"
+              className="album-input"
               placeholder="Genre"
               value={album.genre}
               name="genre"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label"  for="Title">Vendor</label>
+            <label className="album-edit-label"
+              htmlFor="Title">Vendor</label>
             <input
-              className="input-vendor"
+              className="album-input"
               placeholder="Vendor"
               value={album.vendor}
               name="vendor"
               required
               onChange={handleChange}
           />
-          <label for="Title">Condition</label>
+            <label className="album-edit-label"
+              htmlFor="Title">Condition</label>
             <input
-              className="input-condition"
+              className="album-input"
               placeholder="Condition"
               value={album.condition}
               name="condition"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label"   for="Title">Cost</label>
+            <label className="album-edit-label"
+              htmlFor="Title">Cost</label>
             <input
-              className="input-cost"
+              className="album-input"
               placeholder="Cost"
               value={album.cost}
               name="cost"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label" for="Purchased">Purchase Date</label>
+            <label className="album-edit-label"
+              htmlFor="Purchased">Year Purchased</label>
             <input
-              className="input-purchased"
+              className="album-input"
               placeholder="Purchased"
               value={album.purchased}
               name="purchased"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label"  for="Released">Release Date</label>
+          <label className="album-edit-label"  htmlFor="Released">Year Released</label>
             <input
-              className="input-released"
+              className="album-input"
               placeholder="Released"
               value={album.released}
               name="released"
               required
               onChange={handleChange}
           />
-          <label className="album-edit-label" for="input-cover-url">Cover Image</label>
+          <label className="album-edit-label" htmlFor="input-cover-url">Cover Image</label>
             <input
-              className="input-cover_url"
+              className="album-input"
               placeholder="Cover Image"
               value={album.cover_url}
               name="cover_url"
@@ -145,18 +158,19 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               onChange={handleChange}
             />
 
-            <Button1 type="submit" className="submit-button">
+            <button type="submit" className="submit-button">
               Submit
-            </Button1>
-          </form>
+            </button>
           <button
               className='delete-button'
               onClick={()=>handleAlbumDelete(id)}
             >
               Delete
-            </button>
-        </div>
-
+          </button>
+          </form>
+          
+      </div>
+      </div>
     </Layout>
   );
 };

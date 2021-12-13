@@ -1,8 +1,39 @@
+
 .album-edit-container{
   display: flex;
- flex-direction: column;
+ flex-direction: row;
  justify-content: center;
  align-items: center;
  margin: 0 auto;
-background-color: red;
+border-radius: 4%;
+margin-top: 40px;
+
+}
+
+.album-edit-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin: 0 0 0 40px;
+  background-color: gray;
+
+  }
+.create-form{
+  padding-top: 20px;
+  width: 30vw;
+}
+.album-edit-label{
+  font-size:25px;
+}
+.album-input{
+  font-size: 22px;
+}
+
+.submit-button{
+  margin-top: 5px;
+}
+.delete-button{
+  
 }

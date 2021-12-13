@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "./AlbumCreate.css";
+import { useState } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
-import Button1 from "../../components/Button/Button";
+
 
 const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
   const [album, setAlbum] = useState({
@@ -28,14 +28,13 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
     <Layout user={user} handleLogout={handleLogout}>
       <div>
         <h1>Add An Album To Your Collection</h1>
-        <div>
+        <div className="album-create-form">
           <form className="create-form" onSubmit={(e) => {
             e.preventDefault()
             handleAlbumCreate(album)
           }}>
             <input
-              label="Title"
-              className="input-Title"
+              className="inputbox"
               placeholder="Title"
               value={album.title}
               name="title"
@@ -44,7 +43,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-artist"
+              className="inputbox"
               placeholder="Artist"
               value={album.artist}
               name="artist"
@@ -52,7 +51,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-genre"
+              className="inputbox"
               placeholder="Genre"
               value={album.genre}
               name="genre"
@@ -60,7 +59,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-vendor"
+              className="inputbox"
               placeholder="Vendor"
               value={album.vendor}
               name="vendor"
@@ -68,7 +67,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-condition"
+              className="inputbox"
               placeholder="Condition"
               value={album.condition}
               name="condition"
@@ -76,7 +75,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-cost"
+              className="inputbox"
               placeholder="Cost"
               value={album.cost}
               name="cost"
@@ -84,7 +83,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-purchased"
+              className="inputbox"
               placeholder="Purchased"
               value={album.purchased}
               name="purchased"
@@ -92,7 +91,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-released"
+              className="inputbox"
               placeholder="Released"
               value={album.released}
               name="released"
@@ -100,7 +99,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="input-cover_url"
+              className="inputbox"
               placeholder="Cover Image"
               value={album.cover_url}
               name="cover_url"
@@ -108,12 +107,13 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
 
-            <Button1 type="submit" className="submit-button">
+            <button type="submit" className="submit-button">
               Submit
-            </Button1>
+            </button>
           </form>
         </div>
       </div>
+
     </Layout>
   );
 };
