@@ -48,60 +48,73 @@ const AlbumDetail = ({ user, handleLogout }) => {
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-      <div className="album-detail">
-        <img
-          className="album-detail-image"
-          src={album.cover_url}
-          alt={album.title}
-        />
-        <div className="detail">
-          <div className="title">{album.title}</div>
-          <div className="artist">{album.artist}</div>
-          <div className="genre"> {album.genre}</div>
-          <div className="vendor">{album.vendor}</div>
-          <div className="condition">{album.condition}</div>
-          <div className="cost">{album.cost}</div>
-          <div className="purchased">{album.purchased}</div>
-          <div className="released">{album.released}</div>
+      <div className="album-detail-container">
+       
+        <div className="album-detail">
+          <img
+            className="album-detail-image"
+            src={album.cover_url}
+            alt={album.title}
+          />
+          <div className="detail">
+            <div className="title">{`Title: ${album.title}`}</div>
+            <div className="artist">{`Artist: ${album.artist}`}</div>
+            <div className="genre"> {album.genre}</div>
+            <div className="vendor">{album.vendor}</div>
+            <div className="condition">{album.condition}</div>
+            <div className="cost">{album.cost}</div>
+            <div className="purchased">{album.purchased}</div>
+            <div className="released">{album.released}</div>
+            <div className="album-detail-button-div">
+              <div className="button-container">
+                <button>
+                  <Link className="edit-button" to={`/albums/${album.id}/edit`}>
+                    Edit
+                  </Link>
+                </button>
+              </div>
+            </div>
+            </div>
+        
+          </div>
+          </div>
 
-          <div className="button-container">
-            <button>
-              <Link className="edit-button" to={`/albums/${album.id}/edit`}>
-                Edit
-              </Link>
-            </button>
-          </div>
-          <form onSubmit={handleSubmit}>
-            <input
-              className="note-input"
-              placeholder="Title"
-              value={review.title}
-              name="title"
-              required
-              onChange={handleChange}
-            />
-            <input
-              className="note-input"
-              placeholder="Enter a note"
-              value={review.desciption}
-              name="desciption"
-              required
-              onChange={handleChange}
-            />
-            <button type="submit">Submit</button>
-          </form>
-          <div>
-            {album.notes.length > 0
-              ? album.notes.map((note) => (
-                  <div>
-                    <h4>{note.title} </h4>
-                    <p>{note.desciption}</p>
-                  </div>
-                ))
-              : null}
-          </div>
-        </div>
-      </div>
+          {/* <div className="album-details-form">
+            <form  onSubmit={handleSubmit}>
+              <input 
+                className="note-input"
+                placeholder="Title"
+                value={review.title}
+                name="title"
+                required
+                onChange={handleChange}
+              />
+              <input
+                className="note-input"
+                placeholder="Enter a note"
+                value={review.desciption}
+                name="desciption"
+                required
+                onChange={handleChange}
+              />
+                <button className="album-detail-formsubmit 
+              "type="submit">Submit
+                </button>
+            </form>
+            <div className = "album-detail-notes-map">
+              {album.notes.length > 0
+                ? album.notes.map((note) => (
+                    <div className = "album-detail-notes">
+                      <h4 className = "album-detail-title">{note.title} </h4>
+                      <p className = "album-detail-note">{note.desciption}</p>
+                    </div>
+                  ))
+                : null}
+            </div>
+        </div> */}
+
+      
+        
     </Layout>
   );
 };
