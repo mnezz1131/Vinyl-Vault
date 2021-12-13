@@ -21,6 +21,11 @@ export const putAlbum = async (id, albumData) => {
 };
 
 export const deleteAlbum = async (id) => {
-  await api.delete(`/albums/${id}`);
+  const resp = await api.delete(`/albums/${id}`);
+  return resp.data;
 };
 
+export const addNoteToAlbum = async (noteData, id) => {
+  const resp = await api.post(`/albums/${id}/notes`, {note: noteData})
+  return resp.data;
+}

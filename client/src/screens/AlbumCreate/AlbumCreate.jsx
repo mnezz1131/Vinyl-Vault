@@ -1,36 +1,47 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./AlbumCreate.css";
 import Layout from "../../components/Layout/Layout.jsx";
-import Button1  from "../../components/Button/Button";
-import { createAlbum } from "../../services/albums.js";
+import Button1 from "../../components/Button/Button";
 
-const AlbumCreate = (props) => {
+const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
   const [album, setAlbum] = useState({
     title: "",
     artist: "",
     genre: "",
     vendor: "",
     condition: "",
+    cost: "",
     purchased: "",
     released: "",
     cover_url: "",
   });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setAlbum((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
-    <Layout>
+    <Layout user={user} handleLogout={handleLogout}>
       <div>
         <h1>Add An Album To Your Collection</h1>
         <div>
-          <form className="create-form">
+          <form className="create-form" onSubmit={(e) => {
+            e.preventDefault()
+            handleAlbumCreate(album)
+          }}>
             <input
               label="Title"
               className="input-Title"
               placeholder="Title"
               value={album.title}
-              name="name"
+              name="title"
               required
               autoFocus
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-artist"
@@ -38,7 +49,7 @@ const AlbumCreate = (props) => {
               value={album.artist}
               name="artist"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-genre"
@@ -46,7 +57,7 @@ const AlbumCreate = (props) => {
               value={album.genre}
               name="genre"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-vendor"
@@ -54,7 +65,7 @@ const AlbumCreate = (props) => {
               value={album.vendor}
               name="vendor"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-condition"
@@ -62,7 +73,7 @@ const AlbumCreate = (props) => {
               value={album.condition}
               name="condition"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-cost"
@@ -70,15 +81,7 @@ const AlbumCreate = (props) => {
               value={album.cost}
               name="cost"
               required
-              // onChange={handleChange}
-            />
-            <input
-              className="input-genre"
-              placeholder="Genre"
-              value={album.genre}
-              name="genre"
-              required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-purchased"
@@ -86,7 +89,7 @@ const AlbumCreate = (props) => {
               value={album.purchased}
               name="purchased"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-released"
@@ -94,7 +97,7 @@ const AlbumCreate = (props) => {
               value={album.released}
               name="released"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
             <input
               className="input-cover_url"
@@ -102,7 +105,7 @@ const AlbumCreate = (props) => {
               value={album.cover_url}
               name="cover_url"
               required
-              // onChange={handleChange}
+              onChange={handleChange}
             />
 
             <Button1 type="submit" className="submit-button">

@@ -3,11 +3,13 @@ import './Layout.css'
 import Nav from '../Nav/Nav.jsx'
 // import Footer from '../Footer/Footer.jsx'
 
-const Layout = (props) => (
+const Layout = ({user, handleLogout, children}) => (
   <div className='layout'>
-      <Nav user={props.user} />
+    <Nav user={user}
+    handleLogout ={handleLogout}
+    />
       <div className="layout-children">
-          {props.children}
+          {children}
       </div>
       {/* <Footer /> */}
   </div>

@@ -1,22 +1,23 @@
-import { Link } from 'react-router-dom'
-import './AlbumDisplay.jsx'
+import { Link } from "react-router-dom";
+import "./AlbumDisplay.jsx";
 
-
-const AlbumDisplay = (props) => {
-    return (
-        <>
-            <Link className="album" to={`/album/${props._id}`}>
-                <img className="cover_url" src={props.cover_url} alt={props.title} />
-                <div className="album-artist">{props.artist}</div>
-                <div className="album-title">{`${props.title}`}</div>
-                <div className="album-genre">{`${props.genre}`}</div>
-                <div className="album-vendor">{`${props.vendor}`}</div>
-                <div className="album-condition">{`${props.condition}`}</div>
-                <div className="album-cost">{`${props.cost}`}</div>
-                <div className="album-title">{`${props.purchased}`}</div>
-                <div className="album-title">{`${props.released}`}</div>
-            </Link>
-        </>
-    )
-}
-export default AlbumDisplay
+const AlbumDisplay = ({album}) => {
+  return (
+    <>
+      <Link className="album" to={`/albums/${album.id}`}>
+        <div>
+          <img className="cover_url" src={album.cover_url} alt={album.title} />
+          <div className="album-artist">{album.artist}</div>
+          <div className="album-title">{`${album.title}`}</div>
+          <div className="album-genre">{`${album.genre}`}</div>
+          <div className="album-vendor">{`${album.vendor}`}</div>
+          <div className="album-condition">{`${album.condition}`}</div>
+          <div className="album-cost">{`${album.cost}`}</div>
+          <div className="album-title">{`${album.purchased}`}</div>
+          <div className="album-title">{`${album.released}`}</div>
+        </div>
+      </Link>
+    </>
+  );
+};
+export default AlbumDisplay;
