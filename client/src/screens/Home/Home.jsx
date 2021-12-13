@@ -6,11 +6,13 @@ import Layout from "../../components/Layout/Layout.jsx";
 const Home = ({user, handleLogout}) => {
   return (
     <Layout user={user} handleLogout={handleLogout}>
+      <div className = "home-main-div">
       <div className="home-logo">
         <div className="rotate linear infinite">
-          <img src="../../images/logo-big.png" alt="logo" className="logo" />
+          <img src="../../images/logo-big.png" alt="logo" className="home-album" />
         </div>
-      </div>
+        </div>
+        </div>
     </Layout>
   );
 };
