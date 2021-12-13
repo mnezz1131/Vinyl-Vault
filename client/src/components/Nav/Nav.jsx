@@ -10,7 +10,7 @@ const Nav = ({ user, handleLogout }) => {
       <Link className="nav-link-models" to="/add-album">
         Save An Album
       </Link>
-      <button className="nav-link-models" onClick={handleLogout}>
+      <button className="nav-link-models nav-link-models-button" onClick={handleLogout}>
         Logout
       </button>
     </>
@@ -43,16 +43,18 @@ const Nav = ({ user, handleLogout }) => {
         </Link>
       </div>
       <div className="nav-center">
+        {user && (
+          <div className="nav-welcome">Welcome, &nbsp; {user.username}</div>
+        )}
+      </div>
+
+      <div className="nav-right">
         <div className="nav-btns">
           {/* {alwaysOptions} */}
           {user ? authenticatedOptions : unauthenticadedOptions}
         </div>
       </div>
-      <div className="nav-right">
-        {user && (
-          <div className="nav-welcome">Welcome, &nbsp; {user.username}</div>
-        )}
-      </div>
+
     </nav>
   );
 };
