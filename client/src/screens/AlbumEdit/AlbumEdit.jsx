@@ -1,3 +1,4 @@
+import "./AlbumEdit.css";
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
 import Button1 from "../../components/Button/Button";
@@ -54,14 +55,15 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
   return (
     <Layout user={user} handleLogout={handleLogout}>
       <div>
-        <h1>Edit Details on Your Album</h1>
-        <div>
+      
+        </div>
+        <div className="album-edit-container">
           <form className="create-form" onSubmit={(e) => {
             e.preventDefault()
             handleAlbumUpdate(id, album)
-          } }>
+        }}>
+          <label className="album-edit-label" for="Title">Title</label>
             <input
-              label="Title"
               className="input-Title"
               placeholder="Title"
               value={album.title}
@@ -69,7 +71,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               required
               autoFocus
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label"  for="Title">Artist</label>
             <input
               className="input-artist"
               placeholder="Artist"
@@ -77,7 +80,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="artist"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label"   for="Title">Genre</label>
             <input
               className="input-genre"
               placeholder="Genre"
@@ -85,7 +89,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="genre"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label"  for="Title">Vendor</label>
             <input
               className="input-vendor"
               placeholder="Vendor"
@@ -93,7 +98,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="vendor"
               required
               onChange={handleChange}
-            />
+          />
+          <label for="Title">Condition</label>
             <input
               className="input-condition"
               placeholder="Condition"
@@ -101,7 +107,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="condition"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label"   for="Title">Cost</label>
             <input
               className="input-cost"
               placeholder="Cost"
@@ -109,7 +116,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="cost"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label" for="Purchased">Purchase Date</label>
             <input
               className="input-purchased"
               placeholder="Purchased"
@@ -117,7 +125,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="purchased"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label"  for="Released">Release Date</label>
             <input
               className="input-released"
               placeholder="Released"
@@ -125,7 +134,8 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               name="released"
               required
               onChange={handleChange}
-            />
+          />
+          <label className="album-edit-label" for="input-cover-url">Cover Image</label>
             <input
               className="input-cover_url"
               placeholder="Cover Image"
@@ -146,7 +156,7 @@ const AlbumCreate = ({ user, handleAlbumUpdate, handleLogout, handleAlbumDelete 
               Delete
             </button>
         </div>
-      </div>
+
     </Layout>
   );
 };

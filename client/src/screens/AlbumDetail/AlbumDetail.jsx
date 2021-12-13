@@ -59,17 +59,17 @@ const AlbumDetail = ({ user, handleLogout }) => {
           <div className="detail">
             <div className="title">{`Title: ${album.title}`}</div>
             <div className="artist">{`Artist: ${album.artist}`}</div>
-            <div className="genre"> {album.genre}</div>
-            <div className="vendor">{album.vendor}</div>
-            <div className="condition">{album.condition}</div>
-            <div className="cost">{album.cost}</div>
-            <div className="purchased">{album.purchased}</div>
-            <div className="released">{album.released}</div>
+            <div className="genre"> {`Genre: ${album.genre}`}</div>
+            <div className="vendor">{`Vendor: ${album.vendor}`}</div>
+            <div className="condition">{`Condition: ${album.condition}`}</div>
+            <div className="cost">{`Cost: ${album.cost}`}</div>
+            <div className="purchased">{`Purchase Date: ${album.purchased}`}</div>
+            <div className="released">{`Release Date: ${album.released}`}</div>
             <div className="album-detail-button-div">
               <div className="button-container">
                 <button>
-                  <Link className="edit-button" to={`/albums/${album.id}/edit`}>
-                    Edit
+                  <Link className="album-detail-edit-button" to={`/albums/${album.id}/edit`}>
+                    Edit Album
                   </Link>
                 </button>
               </div>

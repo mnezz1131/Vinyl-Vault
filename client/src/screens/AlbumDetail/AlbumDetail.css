@@ -24,12 +24,18 @@
   align-items: center;
   justify-content: center;
 font-style: italic;
-line-height: 45px;
-font-size: 35px;
-
+line-height: 55px;
+font-size: 45px;
+padding: 10px;
+}
+.button-container{
+margin-top: 20px;
 }
 
-
+.album-detail-image{
+  padding: 20px;
+  margin-right: 10px;
+}
 .album-details-form{
   box-sizing: content-box;
 }
