@@ -10,7 +10,9 @@ const Nav = ({ user, handleLogout }) => {
       <Link className="nav-link-models" to="/add-album">
         Save An Album
       </Link>
-      <button onClick={handleLogout}>Logout</button>
+      <button className="nav-link-models" onClick={handleLogout}>
+        Logout
+      </button>
     </>
   );
   const unauthenticadedOptions = (
@@ -28,7 +30,7 @@ const Nav = ({ user, handleLogout }) => {
   //     <Link className="nav-link-models" to="/albums">Albums</Link>
   //     <Link className="nav-link-models" to="/add-album">Save An Album</Link>
   //     <Link className="nav-link-models" to="/albums/:id/edit">Edit An Album</Link>
-     
+
   //   </>
   // );
 
@@ -39,6 +41,8 @@ const Nav = ({ user, handleLogout }) => {
           <img className="nav-logo" src={"/images/logo-big.png"} alt="Title" />
           <img className="nav-title" src={"/images/title.png"} alt="Title" />
         </Link>
+      </div>
+      <div className="nav-center">
         <div className="nav-btns">
           {/* {alwaysOptions} */}
           {user ? authenticatedOptions : unauthenticadedOptions}

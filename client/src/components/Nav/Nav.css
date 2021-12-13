@@ -7,9 +7,9 @@ nav {
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   flex-wrap: nowrap;
-  background-color: #202123;
+  background-color: #202123;;
 }
 
 /* LEFT-ALIGNED CONTENT */
@@ -19,10 +19,17 @@ nav {
   flex-wrap: nowrap;
   padding: 0 0 0 25px;
 }
+.nav-center{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 25px 0 25px;
+}
 
 /* Vinyl Vault logo*/
 .nav-logo {
 
+padding: auto;
   height: auto;
   width: 90px;
   box-sizing: border-box;
@@ -42,15 +49,15 @@ nav {
 .nav-link-models {
   text-decoration: none;
   color: #e9e3d5;
-  margin: 0 0 0 80px;
-  font-size: 16px;
+  margin: 0 40px 0 40px;
+  font-size: 20px;
 }
 
 /* RIGHT-ALIGNED CONTENT */
 .nav-right {
   display: flex;
   align-items: center;
-  padding: 0 35px 0 0;
+  padding: 0 25px 0 0;
 }
 
 /* WELCOME MESSAGE */
@@ -64,12 +71,6 @@ nav {
   padding: 0 80px 0 0;
 }
 
-/* HIDE ICONS */
-.nav-link-account-icon,
-.nav-link-sign-in-icon,
-.nav-link-models-icon {
-  display: none;
-}
 
 /* HOVER EFFECTS */
 .nav-link-account:hover,
@@ -82,8 +83,7 @@ nav {
 
 .nav-link-account-icon img:hover,
 .nav-link-sign-in-icon img:hover,
-.nav-link-models-icon img:hover,
-.nav-shopping-bag img:hover {
+.nav-link-models-icon img:hover{
   filter: invert(67%) sepia(31%) saturate(6368%) hue-rotate(179deg)
     brightness(101%) contrast(91%);
 }
