@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import "./AlbumDisplay.jsx";
+import "./AlbumDisplay.css";
 
 const AlbumDisplay = ({album}) => {
   return (
     <>
       <Link className="album-display" to={`/albums/${album.id}`}>
         <div classname ="album-details">
-          <img className="cover_url" src={album.cover_url} alt={album.title} />
           <div className="album-artist">{album.artist}</div>
           <div className="album-title">{`${album.title}`}</div>
+          <div className="album-cover">
+            <img className="cover_url" src={album.cover_url} alt={album.title} />
+            </div>
           <div className="album-genre">{`${album.genre}`}</div>
           <div className="album-vendor">{`${album.vendor}`}</div>
           <div className="album-condition">{`${album.condition}`}</div>

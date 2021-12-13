@@ -5,15 +5,18 @@ const Footer = () => {
     <footer>
       <p className="footer-copyright">Copyright © 2021</p>
 
-      <a className="footer-github" href="https://github.com/DarrylFalls/Tether">
-        <img src={'/images/icons/github.svg'} alt='github link'></img>
-      </a>
+      <p className="footer-name">Mike Nezzer 2021</p>
 
       <div className="small-logo-div">
         <img
           className="small-logo"
-          src="/images/logoIcon.png"
-          alt="Tether Logo"
+          src="/images/github.png"
+          alt="github"
+        />
+        <img
+          className="small-logo"
+          src="/images/linkedin.png"
+          alt="github"
         />
       </div>
     </footer >
