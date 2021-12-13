@@ -57,7 +57,7 @@ const AlbumDetail = ({ user, handleLogout }) => {
         <div className="detail">
           <div className="title">{album.title}</div>
           <div className="artist">{album.artist}</div>
-          <div className="genre">{album.genre}</div>
+          <div className="genre"> {album.genre}</div>
           <div className="vendor">{album.vendor}</div>
           <div className="condition">{album.condition}</div>
           <div className="cost">{album.cost}</div>
