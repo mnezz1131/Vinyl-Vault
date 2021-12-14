@@ -1,34 +1,32 @@
+
+
 .home-main-div {
   display: flex;
-justify-content: center;
-align-items: center;
-margin:0 auto;
-position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  /* margin-top: 100px; */
 }
 
 .home-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 auto;
-  
-   
+  margin: 0 auto;
 }
-.home-vinyl-vault{
-  position:relative;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  position:absolute;
-
+.home-vinyl-vault {
+  margin-top: 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 0 auto;
 }
 .home-album {
   max-width: 100%;
-
-
- 
-
 }
 
 /* Spinning record logo */
@@ -54,4 +52,19 @@ position: relative;
 }
 .rotate-image {
   animation: rotation 2s linear infinite;
+}
+
+@media only screen and (max-width: 480px) {
+  body .home-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .home-vinyl-vault {
+    width: 100%;
+  }
+  .home-album {
+    max-width: 100%;
+  }
 }

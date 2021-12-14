@@ -6,17 +6,19 @@ const AlbumDisplay = ({album}) => {
     <>
       <Link className="album-display" to={`/albums/${album.id}`}>
         <div className ="album-details">
-          <div className="album-artist">{album.artist}</div>
           <div className="album-title">{`${album.title}`}</div>
+ 
           <div className="album-cover">
             <img className="cover_url" src={album.cover_url} alt={album.title} />
             </div>
+          <div className="album-artist">{album.artist}</div>
+      
           <div className="album-genre">{`Genre: ${album.genre}`}</div>
           <div className="album-vendor">{`Vendor: ${album.vendor}`}</div>
           <div className="album-condition">{`Condition: ${album.condition}`}</div>
           <div className="album-cost">{`Cost: ${album.cost}`}</div>
-          <div className="album-title">{`Purchase Date: ${album.purchased}`}</div>
-          <div className="album-title">{`Release Date: ${album.released}`}</div>
+          <div className="album-purchase">{`Purchase Date: ${album.purchased}`}</div>
+          <div className="album-release">{`Release Date: ${album.released}`}</div>
         </div>
       </Link>
     </>

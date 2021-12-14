@@ -28,18 +28,32 @@ nav {
 
 /* Vinyl Vault logo*/
 .nav-logo {
-  
+
   padding: auto;
   height: auto;
-  width: 90px;
+  width: 4vw;
   box-sizing: border-box;
 }
 
 /* Vinyl Vault Title*/
+/* LEFT-ALIGNED CONTENT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 0 0 25px;
+}
+.nav-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 25px 0 25px;
+}
 .nav-title {
   height: auto;
-  width: 300px;
+  width: 14vw;
   box-sizing: border-box;
+  padding-bottom:4px;
 }
 
 /* NAV LINKS */
@@ -66,8 +80,6 @@ nav-link-sign-up,
   align-items: center;
   padding: 0 25px 0 0;
 }
-
-
 
 /* WELCOME MESSAGE */
 .nav-welcome {
@@ -96,40 +108,49 @@ nav-link-sign-up,
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 900px) {
-  /* TETHER LOGO */
+@media only screen and (max-width: 480px) {
+  /* VINYL VAULT LOGO */
   .nav-logo {
     height: auto;
-    width: 120px;
+    width: 60px;
   }
-
+  .nav-title {
+   display:none;
+  }
   /* HIDE TEXT LINKS & WELCOME */
   .nav-link-account,
   .nav-link-sign-in,
   .nav-link-models,
   .nav-welcome {
-    display: none;
-  }
-
-  /* SHOW & SPACE ICONS */
-  .nav-link-account-icon,
-  .nav-link-sign-in-icon,
-  .nav-link-models-icon {
-    display: inline-block;
+    font-size: 10px;
+    text-align:center;
   }
 
   .nav-left {
     justify-content: flex-start;
-    flex-grow: 1;
+   padding:5px;
+    margin:0 auto;
   }
-
+  .nav-center {
+  display: none;
+  width:1px
+  }
   .nav-btns {
     display: flex;
-    justify-content: space-evenly;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
   }
-
   .nav-right {
     justify-content: space-evenly;
   }
+  /* WELCOME MESSAGE */
+.nav-welcome {
+  /* text-transform: uppercase;
+  color: #f4cd24;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 200;
+  padding: 0 80px 0 0; */
+  display: none;
+}
 }
