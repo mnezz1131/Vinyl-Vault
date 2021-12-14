@@ -14,12 +14,13 @@ const Home = ({ user, handleLogout }) => {
               src="../../images/logo-big-980.png"
               alt="logo"
               className="home-album"
+              
             />
           </div>
 
           <img
             className="home-vinyl-vault"
-            data-aos="flip-right"
+            data-aos="fade-down"
             data-aos-offset="500"
             data-aos-easing="ease-in-sine"
             data-aos-duration="2500"
