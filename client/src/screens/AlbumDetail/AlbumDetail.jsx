@@ -67,11 +67,11 @@ const AlbumDetail = ({ user, handleLogout }) => {
             <div className="released">{`Release Date: ${album.released}`}</div>
             <div className="album-detail-button-div">
               <div className="button-container">
-                <button1>
+                <button>
                   <Link className="album-detail-edit-button" to={`/albums/${album.id}/edit`}>
                     Edit Album
                   </Link>
-                </button1>
+                </button>
               </div>
             </div>
             </div>
