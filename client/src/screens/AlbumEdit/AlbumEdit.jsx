@@ -68,7 +68,7 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
             e.preventDefault()
             handleAlbumUpdate(id, album)
           }}>
-          <h1>Edit An Album</h1>
+          <h2>Edit An Album</h2>
           <label className="album-edit-label" htmlFor="Title">Title</label>
             <input
               className="album-input"

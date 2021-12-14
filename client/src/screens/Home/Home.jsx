@@ -23,7 +23,7 @@ const Home = ({ user, handleLogout }) => {
             data-aos="fade-down"
             data-aos-offset="500"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="2500"
+            data-aos-duration="2000"
             alt="logo"
             src="../../images/title.png"
           />
