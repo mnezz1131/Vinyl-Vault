@@ -1,0 +1,65 @@
+.sign-in-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+}
+.sign-in-container{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+background-color: cyan;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4%;
+  margin-top: 80px;
+  width: 29vw;
+padding: 15px 45px 35px 45px;
+   /* Add shadows to create the "card" effect */
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   background-color: rgba(17, 16, 16, 0.5);
+   border-radius: 5px;
+}
+
+.sign-in-title{
+font-size: 55px;
+line-height: 1.3;
+padding:15px;
+text-align: center;
+}
+.sign-in{
+  position:relative;
+  /* z-index:10; */
+
+}
+.sign-in-form{
+  display: flex;
+  flex-direction: column;
+line-height: 1.4;
+position:relative;
+  font-size: 35px;
+}
+.sign-in-album{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+}
+
+.signin-label{
+  font-size: 35px;
+}
+.signin-inputbox{
+  font-size: 36px;
+  margin: 5px;
+  /* display: flex;
+flex-direction: row; */
+width: 25vw;
+padding: 10px;
+}
+.input-name {
+  font-size: 48px;
+}
