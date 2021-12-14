@@ -1,4 +1,4 @@
-/* ALBUM DISPLAY FLEX */
+/* ALBUM DISPLAY FLEX
 .album-display{
 display:flex;
 flex-direction: row;
@@ -131,4 +131,83 @@ text-shadow:
 .cover_url{
 padding: 0 20px 0 20px;
 width: 20vw;
+} */
+
+.maincontainer
+{
+    width: 302px;
+    height: 299px;
+    margin: 10px;
+    /* float: left; stack each div horizontally */
+}
+.cover_url
+{
+   border-radius: 3px;
+   width: 300px;
+}
+
+.back h2
+{
+    position: absolute;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+.album-title{
+  font-size: 25px;
+  line-height: 1.1;
+  padding: 5px;
+}
+/* .front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    padding-bottom: 20px;
+    color: #000;
+} */
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+.image{
+  width: 302px;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
 }
