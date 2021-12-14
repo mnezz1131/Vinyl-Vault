@@ -8,6 +8,7 @@
   padding: 50px 0 30px 0;
   border-style: solid red;
 }
+
 .album-detail {
   display: flex;
   flex-direction: row;
@@ -16,7 +17,6 @@
   color: #0a0a09;
   width: auto;
 }
-
 .detail {
   display: flex;
   flex-direction: column;

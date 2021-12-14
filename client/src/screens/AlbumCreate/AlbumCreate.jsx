@@ -26,15 +26,17 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-      <div>
-        <h1>Add An Album To Your Collection</h1>
-        <div className="album-create-form">
-          <form className="create-form" onSubmit={(e) => {
+      <div className="create-album-container">
+        <div className='album-create-title' >
+          <div>Add An Album To Your Collection</div>
+          </div>
+        <div className="album-create">
+          <form className="-album-create-form" onSubmit={(e) => {
             e.preventDefault()
             handleAlbumCreate(album)
           }}>
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Title"
               value={album.title}
               name="title"
@@ -43,7 +45,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Artist"
               value={album.artist}
               name="artist"
@@ -51,7 +53,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Genre"
               value={album.genre}
               name="genre"
@@ -59,7 +61,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Vendor"
               value={album.vendor}
               name="vendor"
@@ -67,7 +69,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Condition"
               value={album.condition}
               name="condition"
@@ -75,7 +77,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Cost"
               value={album.cost}
               name="cost"
@@ -83,7 +85,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Purchased"
               value={album.purchased}
               name="purchased"
@@ -91,7 +93,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Released"
               value={album.released}
               name="released"
@@ -99,7 +101,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
             <input
-              className="inputbox"
+              className="album-create-inputbox"
               placeholder="Cover Image"
               value={album.cover_url}
               name="cover_url"
