@@ -3,7 +3,6 @@ import { useState } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
 
 const SignUp = ({ user, handleLogout, handleRegister }) => {
-
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -58,47 +57,53 @@ const SignUp = ({ user, handleLogout, handleRegister }) => {
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-      <div className="form-container">
-        <h3>Sign Up</h3>
-        <form onSubmit={onSignUp}>
-          <label>Username</label>
-          <input
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter username"
-            onChange={handleChange}
-          />
-          <label>Email address</label>
-          <input
-            required
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Enter email"
-            onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          <label>Password Confirmation</label>
-          <input
-            required
-            name="passwordConfirmation"
-            value={passwordConfirmation}
-            type="password"
-            placeholder="Confirm Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
+      <div className="sign-up-form-container">
+        <div className="sign-in-container">
+          <div className="sign-in-title">Sign Up</div>
+          <form className="sign-in-form" onSubmit={onSignUp}>
+            <label className="signup-label">Username</label>
+            <input
+              className="signin-inputbox"
+              required
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Enter username"
+              onChange={handleChange}
+            />
+            <label>Email address</label>
+            <input
+              className="signin-inputbox"
+              required
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Enter email"
+              onChange={handleChange}
+            />
+            <label>Password</label>
+            <input
+              className="signin-inputbox"
+              required
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Password"
+              onChange={handleChange}
+            />
+            <label>Password Confirmation</label>
+            <input
+              className="signin-inputbox"
+              required
+              name="passwordConfirmation"
+              value={passwordConfirmation}
+              type="password"
+              placeholder="Confirm Password"
+              onChange={handleChange}
+            />
+            {renderError()}
+          </form>
+        </div>
       </div>
     </Layout>
   );

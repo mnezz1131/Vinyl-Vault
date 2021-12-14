@@ -49,20 +49,9 @@ export default function SignIn({ user, handleLogin, handleLogout }) {
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-       
-      
-
       <div className="sign-in-form-container">
-        
         <div className="sign-in-container">
-          
-
-
-
           <div className="sign-in-title">Sign In</div>
-
-          <div className="sign-in">
-   
             <form className="sign-in-form" onSubmit={onSignIn}>
               <label className="signin-label">User Name</label>
               <input
@@ -88,7 +77,7 @@ export default function SignIn({ user, handleLogin, handleLogout }) {
             </form>
           </div>
         </div>
-      </div>
+    
     </Layout>
   );
 }
