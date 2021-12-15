@@ -9,7 +9,7 @@
   transition: 0.3s;
   background-color: rgba(17, 16, 16, 0.5);
   border-radius: 5px;
-  padding-bottom: 25px;;
+  padding-bottom: 25px;
 }
 
 .album-create-title {
@@ -42,7 +42,7 @@
 }
 
 .album-create-inputbox {
-  font-size:2.5vw;
+  font-size: 2.5vw;
   margin: 5px;
   width: 25vw;
 }
@@ -62,7 +62,6 @@
   border: none;
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
-
 }
 
 .ablum-create-submit-button {
@@ -74,16 +73,7 @@
   color: black;
 }
 
-
-
-
-
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)  {
-  
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .create-album-container {
     flex-direction: column;
     margin-top: 40px;
@@ -95,82 +85,61 @@
     display: flex;
     width: 100%;
     font-size: 35px;
-
     line-height: 1.1;
-
-  
   }
-
-.album-create {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  border-radius: 4%;
-  margin-top: 10px;
-}
-
-
-.album-create-form {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 80%;
-  justify-content: space-evenly;
-
-}
-
-.album-create-inputbox {
-  font-size:25px;
-  margin: 5px;
-  width: 85%;
-  margin-left: 20px;
-}
-
-.ablum-create-submit-button {
-  display: flex;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100px;
-  margin-top: 10px;
-  margin-left: 20px;
-
-
-}
-
+  .album-create {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 4%;
+    margin-top: 10px;
+  }
+  .album-create-form {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .album-create-inputbox {
+    font-size: 25px;
+    margin: 5px;
+    width: 85%;
+    margin-left: 20px;
+  }
+  .ablum-create-submit-button {
+    font-size: 25px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .create-album-container {
-      flex-direction: column;
-      margin-top: 80px;
-      width: 95%;
-      justify-content: center;
-      align-items: center;
-    }
-    .album-create-title {
-      width: 100%;
-      font-size: 45px;
-      line-height: 1.1;
-  
-    }
-    .album-create-inputbox {
-      font-size:35px;
-      margin: 5px;
-  width: 300px;
-      margin-left: 15px;
-      padding:0px;
-    }
-    .ablum-create-submit-button {
-   
-      width: 125px;
-      margin-top: 10px;
-      margin-left: 20px;
-      font-size: 35px;
-    
-    }
-    
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .create-album-container {
+    flex-direction: column;
+    margin-top: 80px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+  .album-create-title {
+    width: 100%;
+    font-size: 45px;
+    line-height: 1.1;
+  }
+  .album-create-inputbox {
+    font-size: 35px;
+    margin: 5px;
+    width: 300px;
+    margin-left: 15px;
+    padding: 0px;
+  }
+  .ablum-create-submit-button {
+    width: 125px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 35px;
+  }
 }
