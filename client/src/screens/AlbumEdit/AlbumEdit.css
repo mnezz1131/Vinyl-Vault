@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.album-edit-image{
+  width: 40vw;
+}
+
 .album-edit-form {
   display: flex;
   flex-direction: column;
@@ -67,13 +71,13 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   height: 40px;
   width: 10vw;
-  margin-top: 40px;
+  margin-top: 25px;
   background-color: black;
   color: #dfa300;
   border: none;
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
-  margin-top:15px !important;
+ 
 }
 .album-edit-submit-button {
   transition-duration: 0.4s;
@@ -105,4 +109,45 @@ h2 {
 .album-edit-delete-button:hover {
   background-color: #fbc804; /* Green */
   color: black;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .album-edit-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .album-edit-image{
+width:300px
+  }
+  .album-edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ 
+  }
+  .edit-create-form {
+    width: 300px;
+   
+  }
+  h2{
+    font-size: 30;
+  }
+  .album-input {
+    font-size: 20px;
+    width: 100%;
+
+  }
+  .album-edit-submit-button {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    width: 100%;
+   
+  }
+
 }

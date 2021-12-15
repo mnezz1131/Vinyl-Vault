@@ -46,7 +46,7 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
 }
 .button-container {
-  margin-top: 20px;
+  margin:0;
 }
 
 .album-detail-image {
@@ -84,25 +84,35 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .album-detail-container{
+    padding-top:0;
+  }
   .album-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #0a0a09;
     width: auto;
   }
 
   .album-detail-image {
     display: flex;
-    width: 100%;
+    width: 70%;
+    padding:5px;
+    margin:0;
   }
   .render-detail {
-    font-size: 25px;
+    font-size: 5vw;
   }
 
   .detail {
-    margin: 0px 10px 0 10px;
+    /* margin: 0px 10px 0 5px; */
+    width: 69%;
+  }
+  .album-detail-edit-button {
+    font-size: 20px;
+    height: 3.5vh;
+    margin-top: 5px;
     width: 100%;
   }
 }

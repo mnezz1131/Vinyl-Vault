@@ -54,11 +54,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
   return (
     <Layout user={user} handleLogout={handleLogout}>
   
-  
       <div className="album-edit-container">
         <div className='image-container'>
           <img
-            className='edit-product-image'
+            className='album-edit-image'
             src={album.cover_url}
             alt={album.title}
           />
