@@ -62,7 +62,7 @@ h2 {
   /* margin-bottom: -5; */
 }
 
-.edit-submit-button {
+.album-edit-submit-button {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   height: 40px;
@@ -75,17 +75,34 @@ h2 {
   cursor: pointer;
   margin-top:15px !important;
 }
-.edit-delete-button {
+.album-edit-submit-button {
+  transition-duration: 0.4s;
+}
+
+.album-edit-submit-button:hover {
+  background-color: #fbc804; /* Green */
+  color: black;
+}
+.album-edit-delete-button {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   height: 40px;
   width: 10vw;
   margin-top: 40px;
   background-color: black;
-  color: white !important;
+  color: #dfa300;
   border: none;
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
   margin-top:15px !important;
  
+}
+
+.album-edit-delete-button {
+  transition-duration: 0.4s;
+}
+
+.album-edit-delete-button:hover {
+  background-color: #fbc804; /* Green */
+  color: black;
 }

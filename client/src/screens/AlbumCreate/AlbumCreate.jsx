@@ -109,7 +109,7 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
               onChange={handleChange}
             />
 
-            <button type="submit" className="submit-button">
+            <button type="submit" className="ablum-create-submit-button">
               Submit
             </button>
           </form>
