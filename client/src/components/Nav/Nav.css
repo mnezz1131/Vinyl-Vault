@@ -62,13 +62,13 @@ nav {
 .nav-link-sign-out,
 .nav-link-models {
   text-decoration: none;
-  color: #f7cd24;
+  color: #dfa300;
   margin: 0 20px 0 20px;
   font-size: 20px;
 }
 
 .nav-link-models-button{
-background-color: rgb(211, 119, 6);
+background-color: #dfa300;
 padding:0.35em 1.2em;;
 color:black;
 font-weight: 700;
@@ -84,7 +84,7 @@ nav-link-sign-up,
 /* WELCOME MESSAGE */
 .nav-welcome {
   text-transform: uppercase;
-  color: #f4cd24;
+  color: #dfa300;
   font-style: italic;
   font-size: 25px;
   font-weight: 500;
