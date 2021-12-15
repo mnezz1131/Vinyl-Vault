@@ -80,7 +80,9 @@
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  {
   
   .create-album-container {
     flex-direction: column;
@@ -129,11 +131,46 @@
   display: flex;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  width: 95px;
+  width: 100px;
   margin-top: 10px;
   margin-left: 20px;
 
 
 }
 
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .create-album-container {
+      flex-direction: column;
+      margin-top: 80px;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+    }
+    .album-create-title {
+      width: 100%;
+      font-size: 45px;
+      line-height: 1.1;
+  
+    }
+    .album-create-inputbox {
+      font-size:35px;
+      margin: 5px;
+  width: 300px;
+      margin-left: 15px;
+      padding:0px;
+    }
+    .ablum-create-submit-button {
+   
+      width: 125px;
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 35px;
+    
+    }
+    
 }
