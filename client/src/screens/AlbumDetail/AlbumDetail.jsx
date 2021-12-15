@@ -67,7 +67,7 @@ const AlbumDetail = ({ user, handleLogout }) => {
             <div className="album-detail-button-div">
               <div className="button-container">
                 <button className="album-detail-edit-button">
-                  <Link to={`/albums/${album.id}/edit`}>Edit Album</Link>
+                  <Link className="album-detail-href" to={`/albums/${album.id}/edit`}>Edit Album</Link>
                 </button>
               </div>
 
