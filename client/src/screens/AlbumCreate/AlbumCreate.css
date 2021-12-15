@@ -1,42 +1,38 @@
-.create-album-container{
+.create-album-container {
   display: flex;
- /* flex-direction: row;
+  /* flex-direction: row;
  justify-content: center;
  align-items: center; */
- margin: 0 auto;
-border-radius: 4%;
-margin-top: 80px;
-width:70vw;
-/* margin-right: 40px; */
- /* Add shadows to create the "card" effect */
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- transition: 0.3s;
- background-color: rgba(17, 16, 16, 0.5);
- border-radius: 5px;
-
+  margin: 0 auto;
+  border-radius: 4%;
+  margin-top: 80px;
+  width: 70vw;
+  /* margin-right: 40px; */
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: rgba(17, 16, 16, 0.5);
+  border-radius: 5px;
 }
 
-.album-create-title{
-
+.album-create-title {
   display: flex;
   width: 100%;
-  text-align:center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size:3.25vw;
-line-height: 1.5;
-font-weight: 600;
-padding: 5px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.25vw;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 5px;
 }
-.album-create{
+.album-create {
   display: flex;
   /* flex-direction: row;
   justify-content: center;
   align-items: center; */
   margin: 0 auto;
- border-radius: 4%;
- margin-top: 40px;
-
-
+  border-radius: 4%;
+  margin-top: 40px;
 }
 .album-create-form {
   padding-top: 50px;
@@ -45,32 +41,27 @@ padding: 5px;
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
-
 }
-  
-.album-create-inputbox{
-    font-size: 36px;
-    margin: 5px;
-    /* display: flex;
+
+.album-create-inputbox {
+  font-size: 36px;
+  margin: 5px;
+  /* display: flex;
 flex-direction: row; */
- width: 25vw;
+  width: 25vw;
 }
 
 .input-name {
-    font-size: 48px;
+  font-size: 48px;
 }
 
-
-
-
-
 .submit-button {
-    font-size: 22px;
-    height: 40px;
-    margin-top: 40px;
-    background-color: black;
-    color: white;
-    border: none;
-    box-shadow: 2px 2px 10px 2px #CECECE;
-    cursor: pointer;
+  font-size: 22px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
 }

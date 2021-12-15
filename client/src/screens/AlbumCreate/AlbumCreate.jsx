@@ -114,6 +114,9 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
             </button>
           </form>
         </div>
+        <div>
+       
+        </div>
       </div>
 
     </Layout>

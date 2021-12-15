@@ -8,7 +8,10 @@ const AlbumDetail = ({ user, handleLogout }) => {
   const [album, setAlbum] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const [toggle, setToggle] = useState(false);
- 
+  const [review, setReview] = useState({
+    title: "",
+    desciption: "",
+  });
 
   const { id } = useParams();
 
@@ -46,7 +49,6 @@ const AlbumDetail = ({ user, handleLogout }) => {
   return (
     <Layout user={user} handleLogout={handleLogout}>
       <div className="album-detail-container">
-       
         <div className="album-detail">
           <img
             className="album-detail-image"
@@ -64,13 +66,12 @@ const AlbumDetail = ({ user, handleLogout }) => {
             <div className="render-detail">{`Release Date: ${album.released}`}</div>
             <div className="album-detail-button-div">
               <div className="button-container">
-                <button>
-                  <Link className="album-detail-edit-button" to={`/albums/${album.id}/edit`}>
-                    Edit Album
-                  </Link>
+                <button className="album-detail-edit-button">
+                  <Link to={`/albums/${album.id}/edit`}>Edit Album</Link>
                 </button>
               </div>
-                <div className="album-details-form">
+
+              {/* <div className="album-details-form">
             <form  onSubmit={handleSubmit}>
               <input 
                 className="note-input"
@@ -102,17 +103,11 @@ const AlbumDetail = ({ user, handleLogout }) => {
                   ))
                 : null}
             </div>
-        </div> 
+        </div>  */}
             </div>
-            </div>
-        
           </div>
-          </div>
-
-    
-
-      
-        
+        </div>
+      </div>
     </Layout>
   );
 };
