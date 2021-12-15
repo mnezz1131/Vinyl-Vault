@@ -55,6 +55,15 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+.home-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+}
   body .home-logo {
     display: flex;
     justify-content: center;

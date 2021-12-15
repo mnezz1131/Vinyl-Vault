@@ -57,14 +57,14 @@ const AlbumDetail = ({ user, handleLogout }) => {
             alt={album.title}
           />
           <div className="detail">
-            <div className="title">{`Title: ${album.title}`}</div>
-            <div className="artist">{`Artist: ${album.artist}`}</div>
-            <div className="genre"> {`Genre: ${album.genre}`}</div>
-            <div className="vendor">{`Vendor: ${album.vendor}`}</div>
-            <div className="condition">{`Condition: ${album.condition}`}</div>
-            <div className="cost">{`Cost: ${album.cost}`}</div>
-            <div className="purchased">{`Purchase Date: ${album.purchased}`}</div>
-            <div className="released">{`Release Date: ${album.released}`}</div>
+            <div className="render-detail">{`Title: ${album.title}`}</div>
+            <div className="render-detail">{`Artist: ${album.artist}`}</div>
+            <div className="render-detail"> {`Genre: ${album.genre}`}</div>
+            <div className="render-detail">{`Vendor: ${album.vendor}`}</div>
+            <div className="render-detail">{`Condition: ${album.condition}`}</div>
+            <div className="render-detail">{`Cost: ${album.cost}`}</div>
+            <div className="render-detail">{`Purchase Date: ${album.purchased}`}</div>
+            <div className="render-detail">{`Release Date: ${album.released}`}</div>
             <div className="album-detail-button-div">
               <div className="button-container">
                 <button>

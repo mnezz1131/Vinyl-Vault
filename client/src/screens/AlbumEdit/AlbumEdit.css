@@ -15,7 +15,7 @@ margin-top: 40px;
 
 }
 .edit-product-image {
-  max-height: 50vw;
+
 }
 
 .album-edit-form{
@@ -27,10 +27,11 @@ margin-top: 40px;
   margin: 0 0 0 40px;
   }
 
-.create-form{
+.edit-create-form{
   display: flex;
-align-items: ;
-  padding-top: 20px;
+  flex-direction: column;
+/* align-items: center; */
+  padding: 20px;
   width: 30vw;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -44,9 +45,11 @@ align-items: ;
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
+  padding: 0 15px 25px 15px; 
 }
 .create-form {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 h2{
   font-family: 'Cormorant Garamond', serif;
@@ -68,12 +71,19 @@ h2{
 }
 .album-input{
   font-size: 20px;
+width:28vw;
 
 }
 
 .submit-button{
   margin-top: 5px;
+  width:10vw;
 }
 .delete-button{
   margin-top: 15px;
+  width:10vw;
+  height: 43px;
+  background-color: black;
+  color:white;
+  
 }

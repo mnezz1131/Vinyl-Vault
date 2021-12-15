@@ -64,7 +64,7 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
           />
         </div>
       <div className="album-edit-form">
-          <form className="create-form" onSubmit={(e) => {
+          <form className="edit-create-form" onSubmit={(e) => {
             e.preventDefault()
             handleAlbumUpdate(id, album)
           }}>
