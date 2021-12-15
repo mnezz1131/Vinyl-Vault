@@ -1,7 +1,7 @@
-import api from './apiConfig';
+import api from "./apiConfig";
 
 export const getAllAlbums = async () => {
-  const resp = await api.get('/albums');
+  const resp = await api.get("/albums");
   return resp.data;
 };
 
@@ -11,7 +11,7 @@ export const getOneAlbum = async (id) => {
 };
 
 export const createAlbum = async (albumData) => {
-  const resp = await api.post('/albums', { album: albumData });
+  const resp = await api.post("/albums", { album: albumData });
   return resp.data;
 };
 
@@ -26,6 +26,6 @@ export const deleteAlbum = async (id) => {
 };
 
 export const addNoteToAlbum = async (noteData, id) => {
-  const resp = await api.post(`/albums/${id}/notes`, {note: noteData})
+  const resp = await api.post(`/albums/${id}/notes`, { note: noteData });
   return resp.data;
-}
+};

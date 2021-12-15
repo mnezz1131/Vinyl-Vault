@@ -40,24 +40,27 @@
   background-color: rgba(5, 5, 5, 0.5);
   border-radius: 3px;
   width: 37vw;
-}
+} 
 
 .detail:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
-}
+} 
+
 .button-container {
-  margin:0;
-}
+  margin: 0;
+}  
 
 .album-detail-image {
   display: flex;
   width: 37vw;
   padding: 20px;
   margin-right: 10px;
-}
+}  
+
 .button-container {
   margin: 0 auto;
-}
+}  
+
 .album-detail-edit-button {
   font-size: 1.5vw;
   height: 3.5vh;
@@ -69,10 +72,10 @@
   cursor: pointer;
   margin: 0 auto;
 }
-
 .album-detail-href {
   color: #dfa300;
-}
+} 
+
 .album-detail-edit-button {
   transition-duration: 0.4s;
   color: black !important;
@@ -84,8 +87,8 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .album-detail-container{
-    padding-top:0;
+  .album-detail-container {
+    padding-top: 0;
   }
   .album-detail {
     display: flex;
@@ -94,17 +97,15 @@
     justify-content: center;
     width: auto;
   }
-
   .album-detail-image {
     display: flex;
     width: 70%;
-    padding:5px;
-    margin:0;
+    padding: 5px;
+    margin: 0;
   }
   .render-detail {
     font-size: 5vw;
   }
-
   .detail {
     /* margin: 0px 10px 0 5px; */
     width: 69%;
@@ -115,46 +116,37 @@
     margin-top: 5px;
     width: 100%;
   }
-
-
 }
 
-
 /* Ipad media queries */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .album-detail-container{
-      padding-top:10px;
-    }
-    .album-detail {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: auto;
-    }
-  
-    .album-detail-image {
-      display: flex;
-      width: 70%;
-      padding:5px;
-      margin:0;
-    }
-    .render-detail {
-      font-size: 4vw;
-    }
-  
-    .detail {
-      /* margin: 0px 10px 0 5px; */
-      width: 69%;
-      margin-top:15px;
-    }
-    .album-detail-edit-button {
-      font-size: 20px;
-      height: 3.5vh;
-      margin-top: 5px;
-      width: 100%;
-    }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .album-detail-container {
+    padding-top: 10px;
+  }
+  .album-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .album-detail-image {
+    display: flex;
+    width: 70%;
+    padding: 5px;
+    margin: 0;
+  }
+  .render-detail {
+    font-size: 4vw;
+  }
+  .detail {
+    width: 69%;
+    margin-top: 15px;
+  }
+  .album-detail-edit-button {
+    font-size: 20px;
+    height: 3.5vh;
+    margin-top: 5px;
+    width: 100%;
+  }
 }

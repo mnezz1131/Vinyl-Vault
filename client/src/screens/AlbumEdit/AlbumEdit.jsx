@@ -4,7 +4,13 @@ import Layout from "../../components/Layout/Layout.jsx";
 import { useParams } from "react-router-dom";
 import { getOneAlbum } from "../../services/albums";
 
-const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbumDelete }) => {
+const AlbumCreate = ({
+  user,
+  albums,
+  handleAlbumUpdate,
+  handleLogout,
+  handleAlbumDelete,
+}) => {
   const [album, setAlbum] = useState({
     title: "",
     artist: "",
@@ -53,22 +59,26 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
 
   return (
     <Layout user={user} handleLogout={handleLogout}>
-  
       <div className="album-edit-container">
-        <div className='image-container'>
+        <div className="image-container">
           <img
-            className='album-edit-image'
+            className="album-edit-image"
             src={album.cover_url}
             alt={album.title}
           />
         </div>
-      <div className="album-edit-form">
-          <form className="edit-create-form" onSubmit={(e) => {
-            e.preventDefault()
-            handleAlbumUpdate(id, album)
-          }}>
-          <h2>Edit An Album</h2>
-          <label className="album-edit-label" htmlFor="Title">Title</label>
+        <div className="album-edit-form">
+          <form
+            className="edit-create-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleAlbumUpdate(id, album);
+            }}
+          >
+            <h2>Edit An Album</h2>
+            <label className="album-edit-label" htmlFor="Title">
+              Title
+            </label>
             <input
               className="album-input"
               placeholder="Title"
@@ -77,9 +87,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               required
               autoFocus
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Title">Artist</label>
+            />
+            <label className="album-edit-label" htmlFor="Title">
+              Artist
+            </label>
             <input
               className="album-input"
               placeholder="Artist"
@@ -87,9 +98,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="artist"
               required
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Title">Genre</label>
+            />
+            <label className="album-edit-label" htmlFor="Title">
+              Genre
+            </label>
             <input
               className="album-input"
               placeholder="Genre"
@@ -97,9 +109,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="genre"
               required
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Title">Vendor</label>
+            />
+            <label className="album-edit-label" htmlFor="Title">
+              Vendor
+            </label>
             <input
               className="album-input"
               placeholder="Vendor"
@@ -107,9 +120,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="vendor"
               required
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Title">Condition</label>
+            />
+            <label className="album-edit-label" htmlFor="Title">
+              Condition
+            </label>
             <input
               className="album-input"
               placeholder="Condition"
@@ -117,9 +131,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="condition"
               required
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Title">Cost</label>
+            />
+            <label className="album-edit-label" htmlFor="Title">
+              Cost
+            </label>
             <input
               className="album-input"
               placeholder="Cost"
@@ -127,9 +142,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="cost"
               required
               onChange={handleChange}
-          />
-            <label className="album-edit-label"
-              htmlFor="Purchased">Year Purchased</label>
+            />
+            <label className="album-edit-label" htmlFor="Purchased">
+              Year Purchased
+            </label>
             <input
               className="album-input"
               placeholder="Purchased"
@@ -137,8 +153,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="purchased"
               required
               onChange={handleChange}
-          />
-          <label className="album-edit-label"  htmlFor="Released">Year Released</label>
+            />
+            <label className="album-edit-label" htmlFor="Released">
+              Year Released
+            </label>
             <input
               className="album-input"
               placeholder="Released"
@@ -146,8 +164,10 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               name="released"
               required
               onChange={handleChange}
-          />
-          <label className="album-edit-label" htmlFor="input-cover-url">Cover Image</label>
+            />
+            <label className="album-edit-label" htmlFor="input-cover-url">
+              Cover Image
+            </label>
             <input
               className="album-input"
               placeholder="Cover Image"
@@ -156,20 +176,22 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               required
               onChange={handleChange}
             />
-        <div>
-            <button type="album-edit-submit" className="album-edit-submit-button">
-              Submit
-            </button>
-          <button
-              className='album-edit-delete-button'
-              onClick={()=>handleAlbumDelete(id)}
-            >
-              Delete
-            </button>
+            <div>
+              <button
+                type="album-edit-submit"
+                className="album-edit-submit-button"
+              >
+                Submit
+              </button>
+              <button
+                className="album-edit-delete-button"
+                onClick={() => handleAlbumDelete(id)}
+              >
+                Delete
+              </button>
             </div>
           </form>
-          
-      </div>
+        </div>
       </div>
     </Layout>
   );

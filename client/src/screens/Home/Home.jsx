@@ -14,7 +14,6 @@ const Home = ({ user, handleLogout }) => {
               src="../../images/logo-big-980.png"
               alt="logo"
               className="home-album"
-              
             />
           </div>
 

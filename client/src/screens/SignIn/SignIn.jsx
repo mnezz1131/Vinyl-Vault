@@ -52,32 +52,31 @@ export default function SignIn({ user, handleLogin, handleLogout }) {
       <div className="sign-in-form-container">
         <div className="sign-in-container">
           <div className="sign-in-title">Sign In</div>
-            <form className="sign-in-form" onSubmit={onSignIn}>
-              <label className="signin-label">User Name</label>
-              <input
-                className="signin-inputbox"
-                required
-                type="text"
-                name="username"
-                value={username}
-                placeholder="Enter User Name"
-                onChange={handleChange}
-              />
-              <label className="signin-label">Password</label>
-              <input
-                className="signin-inputbox"
-                required
-                name="password"
-                value={password}
-                type="password"
-                placeholder="Password"
-                onChange={handleChange}
-              />
-              {renderError()}
-            </form>
-          </div>
+          <form className="sign-in-form" onSubmit={onSignIn}>
+            <label className="signin-label">User Name</label>
+            <input
+              className="signin-inputbox"
+              required
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Enter User Name"
+              onChange={handleChange}
+            />
+            <label className="signin-label">Password</label>
+            <input
+              className="signin-inputbox"
+              required
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Password"
+              onChange={handleChange}
+            />
+            {renderError()}
+          </form>
         </div>
-    
+      </div>
     </Layout>
   );
 }

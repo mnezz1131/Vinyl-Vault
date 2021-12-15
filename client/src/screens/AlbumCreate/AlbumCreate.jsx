@@ -2,7 +2,6 @@ import "./AlbumCreate.css";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
 
-
 const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
   const [album, setAlbum] = useState({
     title: "",
@@ -27,14 +26,17 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
   return (
     <Layout user={user} handleLogout={handleLogout}>
       <div className="create-album-container">
-        <div className='album-create-title' >
+        <div className="album-create-title">
           <div>Add An Album To Your Collection</div>
-          </div>
+        </div>
         <div className="album-create">
-          <form className="-album-create-form" onSubmit={(e) => {
-            e.preventDefault()
-            handleAlbumCreate(album)
-          }}>
+          <form
+            className="-album-create-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleAlbumCreate(album);
+            }}
+          >
             <input
               className="album-create-inputbox"
               placeholder="Title"
@@ -114,11 +116,8 @@ const AlbumCreate = ({ user, handleAlbumCreate, handleLogout }) => {
             </button>
           </form>
         </div>
-        <div>
-       
-        </div>
+        <div></div>
       </div>
-
     </Layout>
   );
 };
