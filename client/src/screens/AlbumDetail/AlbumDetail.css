@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   padding: 50px 0 30px 0;
-  border-style: solid red;
 }
 
 .album-detail {
@@ -18,8 +17,8 @@
   width: auto;
 }
 
-.render-detail{
-font-size: 3vw;
+.render-detail {
+  font-size: 3vw;
 }
 
 .detail {
@@ -29,17 +28,16 @@ font-size: 3vw;
   justify-content: center;
   line-height: 1.25;
   font-size: 50px;
-  /* font-family: 'Italiana', serif; */
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  color: aliceblue;
+  color: #dfa300;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
   padding: 15px;
   /* Add shadows to create the "card" effect */
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0);
   transition: 0.3s;
-  background-color: rgba(105, 105, 105, 0.5);
+  background-color: rgba(5, 5, 5, 0.5);
   border-radius: 3px;
   width: 37vw;
 }
@@ -58,7 +56,6 @@ font-size: 3vw;
   margin-right: 10px;
 }
 
-
 @media only screen and (max-width: 480px) {
   .album-detail {
     display: flex;
@@ -69,18 +66,16 @@ font-size: 3vw;
     width: auto;
   }
 
-
   .album-detail-image {
     display: flex;
-width: 100%;
-   
+    width: 100%;
   }
-  .render-detail{
+  .render-detail {
     font-size: 25px;
-    }
+  }
 
-    .detail{
-      margin: 0px 10px 0 10px;
-   width:100%;
-    }
+  .detail {
+    margin: 0px 10px 0 10px;
+    width: 100%;
+  }
 }
