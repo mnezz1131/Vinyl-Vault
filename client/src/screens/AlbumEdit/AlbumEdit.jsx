@@ -156,7 +156,7 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               required
               onChange={handleChange}
             />
-
+        <div>
             <button type="album-edit-submit" className="album-edit-submit-button">
               Submit
             </button>
@@ -165,7 +165,8 @@ const AlbumCreate = ({ user, albums, handleAlbumUpdate, handleLogout, handleAlbu
               onClick={()=>handleAlbumDelete(id)}
             >
               Delete
-          </button>
+            </button>
+            </div>
           </form>
           
       </div>
