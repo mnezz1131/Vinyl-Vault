@@ -1,138 +1,4 @@
-/* ALBUM DISPLAY FLEX
-.album-display{
-display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
-
-.album-details{
-  display: flex;
-  flex-direction: column;
-text-align: center;
-padding:10px;
-align-items: center;
-  justify-content: center;
-  color: #0a0a0a;
-  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.7);
-  transition: 0.3s;
-  margin:5px;
- background-color: rgba(1, 1, 1, 0.4);
-border-radius: 5px;
-}
-.album-details:hover {
-  box-shadow: 0 8px 24px 0 rgba(216, 102, 102, 0);
-}
-.album-title{
-  font-family: 'Italiana', serif;
-  font-size: 35px;
-  font-weight: 600;
-line-height: 1.2;
-color:aliceblue;
-text-shadow:
-2px 2px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-
-.album-artist{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 25px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-
-
-
-
-.album-genre{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-.album-vendor{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;;
-}
-.album-condition{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-.album-cost{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-.album-purchase{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-.album-release{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  color:aliceblue;
-  text-shadow:
-1px 1px 0 #000,
--1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-
-.cover_url{
-padding: 0 20px 0 20px;
-width: 20vw;
-} */
-
+/* CARD DISPLAY  - https://blog.avada.io/css/card-hover-effects/*/
 .maincontainer
 {
     width: 302px;
@@ -149,27 +15,27 @@ width: 20vw;
 .back h2
 {
     position: absolute;
-}
-
-.back p
-{
+  }
+  
+  .back p
+  {
     position: absolute;
     top: 50px;
     font-size: 15px;
-}
-.album-title{
-  font-size: 25px;
+  }
+  .album-title{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:800;
+  font-size: 30px;
   line-height: 1.1;
   padding: 5px;
 }
-/* .front h2
-{
-    position: absolute;
-    padding: 10px;
-    top: 200px;
-    padding-bottom: 20px;
-    color: #000;
-} */
+.album-display-info{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:700;
+  font-size: 25px;
+  line-height: 1.1;
+}
 
 /* style the maincontainer class with all child div's of class .front */
 .maincontainer > .front
@@ -193,7 +59,7 @@ width: 20vw;
     position: absolute;
     transform: perspective(600px) rotateY(180deg);
     background: #262626;
-    color: #fff;
+    color: #dfa300;
     width: 302px;
     height: 290px;
     border-radius: 10px;
