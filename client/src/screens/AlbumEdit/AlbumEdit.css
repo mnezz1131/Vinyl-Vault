@@ -123,6 +123,7 @@ h2 {
 
   .album-edit-image{
 width:200px
+
   }
   .album-edit-form {
     display: flex;
@@ -173,5 +174,37 @@ width:200px
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .album-edit-image{
+      width:400px
+        }
+
+        .edit-create-form {
+          width: 300px;
+          margin-top: 5px;
+        }
+
+
+        .album-edit-form {
+         margin: 0 10px 0 20px;
+        }
+        .album-input {
+          font-size: 20px;
+          width: 35vw;
+        }
+
+        .album-edit-submit-button {
+          font-size: 20px;
+          height: 40px;
+          width: 90px;
+          margin-left:5px;
+         
+        }
+
+        .album-edit-delete-button {
+          font-size: 20px;
+          height: 42px;
+          width: 90px;
+          margin-left:20px;
+        }
 
 }
