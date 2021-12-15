@@ -110,8 +110,10 @@ h2 {
   color: black;
 }
 
-
-@media only screen and (max-width: 480px) {
+/* Handheld Devide Media Queries */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  {
   .album-edit-container {
     display: flex;
     flex-direction: column;
@@ -163,5 +165,13 @@ width:200px
     margin-left:20px;
    
   }
+}
+
+
+/* Ipad media queries */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
 
 }

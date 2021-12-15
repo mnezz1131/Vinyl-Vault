@@ -118,3 +118,43 @@
 
 
 }
+
+
+/* Ipad media queries */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .album-detail-container{
+      padding-top:10px;
+    }
+    .album-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+    }
+  
+    .album-detail-image {
+      display: flex;
+      width: 70%;
+      padding:5px;
+      margin:0;
+    }
+    .render-detail {
+      font-size: 4vw;
+    }
+  
+    .detail {
+      /* margin: 0px 10px 0 5px; */
+      width: 69%;
+      margin-top:15px;
+    }
+    .album-detail-edit-button {
+      font-size: 20px;
+      height: 3.5vh;
+      margin-top: 5px;
+      width: 100%;
+    }
+}
