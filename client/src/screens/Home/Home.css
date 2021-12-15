@@ -1,5 +1,3 @@
-
-
 .home-main-div {
   display: flex;
   justify-content: center;
@@ -24,6 +22,7 @@
   bottom: 0;
   position: absolute;
   margin: 0 auto;
+  width:66vw;
 }
 .home-album {
   max-width: 100%;
@@ -53,9 +52,11 @@
 .rotate-image {
   animation: rotation 2s linear infinite;
 }
-
-@media only screen and (max-width: 480px) {
-
+/* ###################################################################### */
+/* Hand Held Device Media Query */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
 .home-main-div {
   display: flex;
   justify-content: center;
@@ -79,3 +80,26 @@
     max-width: 100%;
   }
 }
+
+
+
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/
+/* ipad media query */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+    .home-main-div {
+   margin-top: 100px;
+    }
+    .home-vinyl-vault {
+
+      width: 80%;
+    }
+  
+}
+
+
