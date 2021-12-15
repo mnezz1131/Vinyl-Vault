@@ -95,8 +95,8 @@ nav-link-sign-up,
 .nav-link-account:hover,
 .nav-link-sign-in:hover,
 .nav-link-models:hover {
-  color: #f5640a;
-  border-bottom: solid #da9b1d 4px;
+  color: #fbc804;
+  border-bottom: solid #f8b704 1px;
   transition: all ease-in-out 200ms;
 }
 

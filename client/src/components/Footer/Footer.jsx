@@ -8,16 +8,17 @@ const Footer = () => {
       <p className="footer-name">Mike Nezzer 2021</p>
 
       <div className="small-logo-div">
-        <img
+    <a href="https://github.com/mnezz1131">   <img
           className="small-logo"
           src="/images/github.png"
           alt="github"
-        />
-        <img
+        /></a> 
+
+      <a href="https://www.linkedin.com/in/michael-nezzer">  <img
           className="small-logo"
           src="/images/linkedin.png"
           alt="github"
-        />
+        /></a>
       </div>
     </footer >
   )
