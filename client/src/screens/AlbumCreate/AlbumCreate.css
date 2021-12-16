@@ -112,7 +112,7 @@
     font-size: 25px;
     width: 100px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 80px 20px 20px 20px;
   }
 }
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
@@ -120,9 +120,10 @@
   .create-album-container {
     flex-direction: column;
     margin-top: 80px;
-    width: 95%;
+    width: 94%;
     justify-content: center;
     align-items: center;
+margin: 20px;
   }
   .album-create-title {
     width: 100%;
@@ -132,7 +133,7 @@
   .album-create-inputbox {
     font-size: 35px;
     margin: 5px;
-    width: 300px;
+    width: 295px;
     margin-left: 15px;
     padding: 0px;
   }
