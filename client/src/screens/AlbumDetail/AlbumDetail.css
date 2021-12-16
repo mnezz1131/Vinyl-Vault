@@ -132,7 +132,7 @@
   }
   .album-detail-image {
     display: flex;
-    width: 70%;
+    width: 95%;
     padding: 5px;
     margin: 0;
   }
@@ -140,7 +140,7 @@
     font-size: 4vw;
   }
   .detail {
-    width: 69%;
+    width: 90%;
     margin-top: 15px;
   }
   .album-detail-edit-button {
