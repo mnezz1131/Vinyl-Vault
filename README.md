@@ -59,8 +59,11 @@ Ruby, Rails and Postgresql
 ## ERD Model
 <a href="https://imgur.com/U3YFGcQ"><img src="https://i.imgur.com/U3YFGcQ.png" title="source: imgur.com" /></a>
 
-## API Endpoint Documentation
-
+## References Used
+- Background Image Credit
+<a href="http://www.freepik.com">Designed by Freepik</a>
+-Flip Card CSS
+<a href="https://blog.avada.io/css/card-hover-effects/"</a>
 
 
 ## Time Estimate
@@ -71,4 +74,6 @@ Ruby, Rails and Postgresql
 - Integrate Discogs API - Have user be able to search, add, post albums
 - Work adding multiple table and user input
 
+## Link to Deployed Site
+https://app.netlify.com/sites/dreamy-fermi-2fb8d2/overview
 
