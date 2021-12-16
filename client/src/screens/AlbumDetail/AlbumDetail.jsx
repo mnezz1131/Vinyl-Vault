@@ -1,17 +1,14 @@
 import "./AlbumDetail.css";
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.jsx";
-import { getOneAlbum, addNoteToAlbum } from "../../services/albums";
+import { getOneAlbum} from "../../services/albums";
 import { useParams, Link } from "react-router-dom";
 
 const AlbumDetail = ({ user, handleLogout }) => {
   const [album, setAlbum] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const [toggle, setToggle] = useState(false);
-  const [review, setReview] = useState({
-    title: "",
-    desciption: "",
-  });
+ 
+ 
 
   const { id } = useParams();
 
@@ -22,25 +19,10 @@ const AlbumDetail = ({ user, handleLogout }) => {
       setLoaded(true);
     };
     fetchAlbum();
-  }, [id, toggle]);
+  }, [id]);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setReview((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    await addNoteToAlbum(review, id);
-    setReview({
-      title: "",
-      desciption: "",
-    });
-    setToggle((prev) => !prev);
-  };
+ 
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
