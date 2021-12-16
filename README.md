@@ -67,7 +67,7 @@ Ruby, Rails and Postgresql
 
 
 ## Time Estimate
-<a href="https://imgur.com/bDYuqdo"><img src="https://i.imgur.com/bDYuqdo.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/vBHkKTG"><img src="https://i.imgur.com/vBHkKTG.png" title="source: imgur.com" /></a>
 
 ## Post MVP
 - Sortable drop down list for albums by artist, genre, alphabetical
