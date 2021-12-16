@@ -21,9 +21,11 @@ To deliver an operable app by the deadline that is fully functioning and stylist
 - Home Page (Signed In)
 - Sign In
 - Sign Up ("Create an Account")
-- Browse Albums
+- Sign Out
+- Albums
 - Album Detail (Edit Info - Delete)
-- Album Entry Create
+- Album Edit
+- Album Create
 
 ## Wireframe
 <a href="https://imgur.com/eTQeaKs"><img src="https://i.imgur.com/eTQeaKs.png" title="source: imgur.com" /></a>
@@ -38,7 +40,7 @@ Figma Project Page:https://www.figma.com/file/UHYXCqAzBljsLorrXlXylx/Vinyl-Vault
 <a href="https://imgur.com/9gDgLam"><img src="https://i.imgur.com/9gDgLam.png" title="source: imgur.com" /></a>
 
 ## Component Architecture
-<a href="https://imgur.com/1CQIZYc"><img src="https://i.imgur.com/1CQIZYc.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/AQiENsh"><img src="https://i.imgur.com/AQiENsh.png" title="source: imgur.com" /></a>
 
 ## Libaries and Dependencies
 - React
