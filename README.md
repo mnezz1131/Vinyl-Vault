@@ -75,5 +75,5 @@ Ruby, Rails and Postgresql
 - Work adding multiple table and user input
 
 ## Link to Deployed Site
-https://app.netlify.com/sites/dreamy-fermi-2fb8d2/overview
+https://vinyl-vault.netlify.app/
 
